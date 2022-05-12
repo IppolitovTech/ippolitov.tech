@@ -5409,6 +5409,102 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -5479,6 +5575,7 @@ __webpack_require__.r(__webpack_exports__);
 window.axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 vue__WEBPACK_IMPORTED_MODULE_1__["default"].use((vue_axios__WEBPACK_IMPORTED_MODULE_0___default()), axios);
 vue__WEBPACK_IMPORTED_MODULE_1__["default"].component('header-menu', (__webpack_require__(/*! ./components/HeaderMenu.vue */ "./resources/js/components/HeaderMenu.vue")["default"]));
+vue__WEBPACK_IMPORTED_MODULE_1__["default"].component('portfolio-page', (__webpack_require__(/*! ./components/PortfolioPage.vue */ "./resources/js/components/PortfolioPage.vue")["default"]));
 var app = new vue__WEBPACK_IMPORTED_MODULE_1__["default"]({
   el: '#app'
 });
@@ -10532,7 +10629,7 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 ___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css?family=Baloo+Paaji);"]);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "h2,\nh3 {\n  font-size: 2.5em;\n  text-transform: uppercase;\n}\nh2 span,\nh3 span {\n  width: 100%;\n  float: left;\n  color: #fd7e14;\n  -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);\n  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);\n  transform: translateY(-50px);\n  opacity: 0;\n  -webkit-animation-name: titleAnimation;\n          animation-name: titleAnimation;\n  -webkit-animation-timing-function: ease;\n          animation-timing-function: ease;\n  -webkit-animation-duration: 3s;\n          animation-duration: 3s;\n}\nh3 span {\n  -webkit-animation-delay: 4.1s;\n          animation-delay: 4.1s;\n  -webkit-animation-fill-mode: forwards;\n}\nh3 span:first-child {\n  -webkit-animation-delay: 4.2s;\n          animation-delay: 4.2s;\n}\nh3 span:last-child {\n  color: #ffe221;\n  -webkit-animation-delay: 4s;\n          animation-delay: 4s;\n}\n.usechrome {\n  font-size: 10px;\n  color: #fff;\n  font-family: helvetica, arial;\n  position: absolute;\n  bottom: 20px;\n  width: 100%;\n  text-align: center;\n  left: 0;\n}\n@-webkit-keyframes titleAnimation {\n0% {\n    transform: translateY(-50px);\n    opacity: 0;\n    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);\n    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);\n}\n20% {\n    transform: translateY(0);\n    opacity: 1;\n    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);\n    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);\n}\n80% {\n    transform: translateY(0);\n    opacity: 1;\n    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);\n    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);\n}\n100% {\n    transform: translateY(50px);\n    opacity: 0;\n    -webkit-clip-path: polygon(100% 0, 100% 0%, 0 100%, 0 100%);\n    clip-path: polygon(100% 0, 100% 0%, 0 100%, 0 100%);\n}\n}\n@keyframes titleAnimation {\n0% {\n    transform: translateY(-50px);\n    opacity: 0;\n    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);\n    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);\n}\n20% {\n    transform: translateY(0);\n    opacity: 1;\n    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);\n    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);\n}\n80% {\n    transform: translateY(0);\n    opacity: 1;\n    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);\n    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);\n}\n100% {\n    transform: translateY(50px);\n    opacity: 0;\n    -webkit-clip-path: polygon(100% 0, 100% 0%, 0 100%, 0 100%);\n    clip-path: polygon(100% 0, 100% 0%, 0 100%, 0 100%);\n}\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "h2 {\n  font-size: 2.5em;\n  text-transform: uppercase;\n}\nh2 span {\n  width: 100%;\n  float: left;\n  color: #fd7e14;\n  -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);\n  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);\n  transform: translateY(-50px);\n  opacity: 0;\n  -webkit-animation-name: titleAnimation;\n          animation-name: titleAnimation;\n  -webkit-animation-timing-function: ease;\n          animation-timing-function: ease;\n  -webkit-animation-duration: 3s;\n          animation-duration: 3s;\n}\nh3 span {\n  -webkit-animation-delay: 4.1s;\n          animation-delay: 4.1s;\n  -webkit-animation-fill-mode: forwards;\n}\nh3 span:first-child {\n  -webkit-animation-delay: 4.2s;\n          animation-delay: 4.2s;\n}\nh3 span:last-child {\n  color: #ffe221;\n  -webkit-animation-delay: 4s;\n          animation-delay: 4s;\n}\n.usechrome {\n  font-size: 10px;\n  color: #fff;\n  font-family: helvetica, arial;\n  position: absolute;\n  bottom: 20px;\n  width: 100%;\n  text-align: center;\n  left: 0;\n}\n@-webkit-keyframes titleAnimation {\n0% {\n    transform: translateY(-50px);\n    opacity: 0;\n    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);\n    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);\n}\n20% {\n    transform: translateY(0);\n    opacity: 1;\n    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);\n    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);\n}\n80% {\n    transform: translateY(0);\n    opacity: 1;\n    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);\n    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);\n}\n100% {\n    transform: translateY(50px);\n    opacity: 0;\n    -webkit-clip-path: polygon(100% 0, 100% 0%, 0 100%, 0 100%);\n    clip-path: polygon(100% 0, 100% 0%, 0 100%, 0 100%);\n}\n}\n@keyframes titleAnimation {\n0% {\n    transform: translateY(-50px);\n    opacity: 0;\n    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);\n    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);\n}\n20% {\n    transform: translateY(0);\n    opacity: 1;\n    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);\n    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);\n}\n80% {\n    transform: translateY(0);\n    opacity: 1;\n    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);\n    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);\n}\n100% {\n    transform: translateY(50px);\n    opacity: 0;\n    -webkit-clip-path: polygon(100% 0, 100% 0%, 0 100%, 0 100%);\n    clip-path: polygon(100% 0, 100% 0%, 0 100%, 0 100%);\n}\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -10557,7 +10654,31 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 ___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=devanagari,latin-ext);"]);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.icon-link {\r\n  height: 3em;\n}\n.show-text-box {\r\n  overflow: hidden;\r\n  -webkit-animation: showDiv 5s forwards;\r\n          animation: showDiv 5s forwards;\n}\n.show-text {\r\n  opacity: 0;\r\n  -webkit-animation: ani 5s forwards;\r\n          animation: ani 5s forwards;\n}\n@-webkit-keyframes ani {\n0% {\r\n    opacity: 0;\n}\n100% {\r\n    opacity: 1;\n}\n}\n@keyframes ani {\n0% {\r\n    opacity: 0;\n}\n100% {\r\n    opacity: 1;\n}\n}\n@-webkit-keyframes showDiv {\n0%,\r\n  99% {\r\n    height: 0px;\n}\n100% {\r\n    height: 120px;\n}\n}\n@keyframes showDiv {\n0%,\r\n  99% {\r\n    height: 0px;\n}\n100% {\r\n    height: 120px;\n}\n}\n.h1-text_color {\r\n  color: #fd7e14;\n}\n.main-page-background {\r\n  height: 300px;\r\n  weight: 100%;\r\n  background: #000;\n}\n.main-page-background_text {\r\n  color: white;\r\n  text-shadow: 1px 2px black;\r\n  font-size: 2.5em;\r\n  position: relative;\r\n  top: 38px;\n}\n.my-name {\r\n  font-size: 3em;\r\n  text-shadow: 0px 2px #dddddd;\n}\n.my-photo {\r\n  background: url(\"/img/my-photo.jpg\") 44% 14%;\r\n  height: 435px;\r\n  background-size: cover;\r\n  border-radius: 50%;\n}\r\n\r\n/* #Primary\r\n================================================== */\nsvg.bi.bi-heart.active {\r\n  display: inline-block;\r\n  color: #fd7e14;\n}\nsvg.bi.bi-heart {\r\n  display: none;\n}\nbody {\r\n  font-family: \"Poppins\", sans-serif;\r\n  font-size: 1.3em;\r\n  font-weight: 400;\r\n  color: #212112;\r\n  background-color: #fff;\r\n  line-height: unset !important;\n}\n::-moz-selection {\r\n  color: #fff;\r\n  background-color: #fd7e14;\n}\n::selection {\r\n  color: #fff;\r\n  background-color: #fd7e14;\n}\n::-moz-selection {\r\n  color: #fff;\r\n  background-color: #fd7e14;\n}\r\n\r\n/* #Navigation\r\n================================================== */\n.navbar-toggler:active,\r\n.navbar-toggler:focus {\r\n  outline: none;\n}\n.navbar-light .navbar-toggler-icon {\r\n  width: 24px;\r\n  height: 17px;\r\n  background-image: none;\r\n  position: relative;\r\n  border-bottom: 1px solid #000;\r\n  transition: all 300ms linear;\n}\n.navbar-light .navbar-toggler-icon:after,\r\n.navbar-light .navbar-toggler-icon:before {\r\n  width: 24px;\r\n  position: absolute;\r\n  height: 1px;\r\n  background-color: #000;\r\n  top: 0;\r\n  left: 0;\r\n  content: \"\";\r\n  z-index: 2;\r\n  transition: all 300ms linear;\n}\n.nav-link {\r\n  color: #212121 !important;\r\n  font-weight: 500;\r\n  transition: all 200ms linear;\n}\n.nav-item:hover .nav-link {\r\n  color: #fd7e14 !important;\n}\n.nav-link.active {\r\n  color: #fd7e14 !important;\n}\n.nav-link {\r\n  position: relative;\r\n  padding: 5px 0 !important;\r\n  display: inline-block;\n}\n.nav-item:after {\r\n  position: absolute;\r\n  bottom: -5px;\r\n  left: 0;\r\n  width: 100%;\r\n  height: 2px;\r\n  content: \"\";\r\n  background-color: #fd7e14;\r\n  opacity: 0;\r\n  transition: all 200ms linear;\n}\n.nav-item:hover:after {\r\n  bottom: 0;\r\n  opacity: 1;\n}\n.nav-item.active:hover:after {\r\n  opacity: 0;\n}\n.nav-item {\r\n  position: relative;\r\n  transition: all 200ms linear;\n}\n@media (max-width: 767px) {\n.nav-item:after {\r\n    display: none;\n}\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\nh2 {\r\n  font-size: 2.25rem;\r\n  text-transform: none;\n}\n.upwork-button {\r\n  background: #14a800;\r\n  color: white;\r\n  height: 2rem;\r\n  width: 15rem;\r\n  border-radius: 50%;\r\n  text-align: center;\n}\n.footer_text_color {\r\n  color: #fff;\n}\n.header-icon-link {\r\n  height: 3em;\n}\n.icon-link {\r\n  height: 3em;\r\n  filter: brightness(132%) contrast(10%);\n}\n.show-text-box {\r\n  overflow: hidden;\r\n  -webkit-animation: showDiv 3s forwards;\r\n          animation: showDiv 3s forwards;\n}\n.color {\r\n  color: #feffff;\r\n  background: #fd7e14;\n}\n.show-text {\r\n  opacity: 0;\r\n  -webkit-animation: ani 5s forwards;\r\n          animation: ani 5s forwards;\n}\n@-webkit-keyframes ani {\n0% {\r\n    opacity: 0;\n}\n100% {\r\n    opacity: 1;\n}\n}\n@keyframes ani {\n0% {\r\n    opacity: 0;\n}\n100% {\r\n    opacity: 1;\n}\n}\n@-webkit-keyframes showDiv {\n0%,\r\n  99% {\r\n    height: 0px;\n}\n}\n@keyframes showDiv {\n0%,\r\n  99% {\r\n    height: 0px;\n}\n}\n.h1-text_color {\r\n  color: #fd7e14;\n}\n.main-page-background {\r\n  background: #000;\n}\n.main-page-background_text {\r\n  color: white;\r\n  text-shadow: 1px 2px black;\r\n  font-size: 2.25rem;\r\n  position: relative;\r\n  top: 8px;\n}\n.my-name {\r\n  font-size: 3em;\r\n  text-shadow: 0px 2px #dddddd;\n}\n.my-photo {\r\n  background: url(\"/img/my-photo.jpg\") 44% 14%;\r\n  height: 435px;\r\n  background-size: cover;\r\n  border-radius: 50%;\n}\r\n\r\n/* #Primary\r\n================================================== */\nsvg.bi.bi-heart.active {\r\n  display: inline-block;\r\n  color: #fd7e14;\n}\nsvg.bi.bi-heart {\r\n  display: none;\n}\nbody {\r\n  font-family: \"Poppins\", sans-serif;\r\n  font-size: 1.3em;\r\n  font-weight: 400;\r\n  color: #212112;\r\n  background-color: #fff;\r\n  line-height: unset !important;\n}\n::-moz-selection {\r\n  color: #fff;\r\n  background-color: #fd7e14;\n}\n::selection {\r\n  color: #fff;\r\n  background-color: #fd7e14;\n}\n::-moz-selection {\r\n  color: #fff;\r\n  background-color: #fd7e14;\n}\r\n\r\n/* #Navigation\r\n================================================== */\n.navbar-toggler:active,\r\n.navbar-toggler:focus {\r\n  outline: none;\n}\n.navbar-light .navbar-toggler-icon {\r\n  width: 24px;\r\n  height: 17px;\r\n  background-image: none;\r\n  position: relative;\r\n  border-bottom: 1px solid #000;\r\n  transition: all 300ms linear;\n}\n.navbar-light .navbar-toggler-icon:after,\r\n.navbar-light .navbar-toggler-icon:before {\r\n  width: 24px;\r\n  position: absolute;\r\n  height: 1px;\r\n  background-color: #000;\r\n  top: 0;\r\n  left: 0;\r\n  content: \"\";\r\n  z-index: 2;\r\n  transition: all 300ms linear;\n}\n.nav-link {\r\n  cursor: pointer;\r\n  color: #212121 !important;\r\n  font-weight: 500;\r\n  transition: all 200ms linear;\n}\n.nav-item:hover .nav-link {\r\n  color: #fd7e14 !important;\n}\n.nav-link.active {\r\n  color: #fd7e14 !important;\n}\n.nav-link {\r\n  position: relative;\r\n  padding: 5px 0 !important;\r\n  display: inline-block;\n}\n.nav-item:after {\r\n  position: absolute;\r\n  bottom: -5px;\r\n  left: 0;\r\n  width: 100%;\r\n  height: 2px;\r\n  content: \"\";\r\n  background-color: #fd7e14;\r\n  opacity: 0;\r\n  transition: all 200ms linear;\n}\n.nav-item:hover:after {\r\n  bottom: 0;\r\n  opacity: 1;\n}\n.nav-item.active:hover:after {\r\n  opacity: 0;\n}\n.nav-item {\r\n  position: relative;\r\n  transition: all 200ms linear;\n}\n@media (max-width: 767px) {\n.nav-item:after {\r\n    display: none;\n}\n}\r\n", ""]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/PortfolioPage.vue?vue&type=style&index=0&lang=css&":
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/PortfolioPage.vue?vue&type=style&index=0&lang=css& ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+// Imports
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, "\n.view {\r\n  width: 300px;\r\n  height: 270px;\r\n  margin: 10px;\r\n  float: left;\r\n  border: 6px solid #fff;\r\n  overflow: hidden;\r\n  position: relative;\r\n  text-align: center;\r\n  box-shadow: 1px 1px 2px #e6e6e6;\r\n  cursor: default;\r\n  background: black;\r\n  background: #fff url(\"/img/old-portfolio/bgimg.jpg\") no-repeat center center;\n}\n.view .mask,\r\n.view .content {\r\n  width: 300px;\r\n  height: 270px;\r\n  position: absolute;\r\n  overflow: hidden;\r\n  top: 0;\r\n  left: 0;\n}\n.view-fifth .mask {\r\n  background-color: rgba(146, 96, 91, 0.3);\r\n  transform: translateX(-300px);\r\n  -ms-filter: \"progid: DXImageTransform.Microsoft.Alpha(Opacity=100)\";\r\n  filter: alpha(opacity=100);\r\n  opacity: 1;\r\n  transition: all 0.3s ease-in-out;\r\n  font-size: 0.9rem;\r\n  padding: 0px 12px 0px 4px;\n}\n.view img {\r\n  display: block;\r\n  position: relative;\n}\n.view-fifth img {\r\n  transition: all 0.3s ease-in-out;\n}\nimg {\r\n  width: auto\\9;\r\n  height: auto;\r\n  max-width: 100%;\r\n  vertical-align: middle;\r\n  border: 0;\r\n  -ms-interpolation-mode: bicubic;\n}\n.view-fifth p {\r\n  -ms-filter: \"progid: DXImageTransform.Microsoft.Alpha(Opacity=0)\";\r\n  filter: alpha(opacity=0);\r\n  opacity: 0;\r\n  color: #333;\r\n  transition: all 0.2s linear;\n}\n.view-fifth:hover .mask {\r\n  transform: translateX(0px);\n}\n.view-fifth:hover img {\r\n  transform: translateX(300px);\n}\n.view-fifth:hover p {\r\n  -ms-filter: \"progid: DXImageTransform.Microsoft.Alpha(Opacity=100)\";\r\n  filter: alpha(opacity=100);\r\n  opacity: 1;\n}\n.view h3 {\r\n  font-family: Tahoma;\r\n  text-transform: uppercase;\r\n  color: #fff;\r\n  text-align: center;\r\n  position: relative;\r\n  font-size: 17px;\r\n  padding: 10px;\r\n  background: rgba(0, 0, 0, 0.8);\r\n  margin: 10px 0 0 0;\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -11671,6 +11792,36 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 
 /***/ }),
 
+/***/ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/PortfolioPage.vue?vue&type=style&index=0&lang=css&":
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/PortfolioPage.vue?vue&type=style&index=0&lang=css& ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_PortfolioPage_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./PortfolioPage.vue?vue&type=style&index=0&lang=css& */ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/PortfolioPage.vue?vue&type=style&index=0&lang=css&");
+
+            
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_PortfolioPage_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_1__["default"], options);
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_PortfolioPage_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
+
+/***/ }),
+
 /***/ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js":
 /*!****************************************************************************!*\
   !*** ./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js ***!
@@ -12005,6 +12156,45 @@ component.options.__file = "resources/js/components/HeaderMenu.vue"
 
 /***/ }),
 
+/***/ "./resources/js/components/PortfolioPage.vue":
+/*!***************************************************!*\
+  !*** ./resources/js/components/PortfolioPage.vue ***!
+  \***************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _PortfolioPage_vue_vue_type_template_id_4706401c___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./PortfolioPage.vue?vue&type=template&id=4706401c& */ "./resources/js/components/PortfolioPage.vue?vue&type=template&id=4706401c&");
+/* harmony import */ var _PortfolioPage_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./PortfolioPage.vue?vue&type=style&index=0&lang=css& */ "./resources/js/components/PortfolioPage.vue?vue&type=style&index=0&lang=css&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+var script = {}
+;
+
+
+/* normalize component */
+
+var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  script,
+  _PortfolioPage_vue_vue_type_template_id_4706401c___WEBPACK_IMPORTED_MODULE_0__.render,
+  _PortfolioPage_vue_vue_type_template_id_4706401c___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/PortfolioPage.vue"
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
+
+/***/ }),
+
 /***/ "./resources/js/components/HeaderMenu.vue?vue&type=script&lang=js&":
 /*!*************************************************************************!*\
   !*** ./resources/js/components/HeaderMenu.vue?vue&type=script&lang=js& ***!
@@ -12047,6 +12237,19 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/components/PortfolioPage.vue?vue&type=style&index=0&lang=css&":
+/*!************************************************************************************!*\
+  !*** ./resources/js/components/PortfolioPage.vue?vue&type=style&index=0&lang=css& ***!
+  \************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_PortfolioPage_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/style-loader/dist/cjs.js!../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./PortfolioPage.vue?vue&type=style&index=0&lang=css& */ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/PortfolioPage.vue?vue&type=style&index=0&lang=css&");
+
+
+/***/ }),
+
 /***/ "./resources/js/components/HeaderMenu.vue?vue&type=template&id=7b393792&":
 /*!*******************************************************************************!*\
   !*** ./resources/js/components/HeaderMenu.vue?vue&type=template&id=7b393792& ***!
@@ -12060,6 +12263,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_HeaderMenu_vue_vue_type_template_id_7b393792___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
 /* harmony export */ });
 /* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_HeaderMenu_vue_vue_type_template_id_7b393792___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./HeaderMenu.vue?vue&type=template&id=7b393792& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/HeaderMenu.vue?vue&type=template&id=7b393792&");
+
+
+/***/ }),
+
+/***/ "./resources/js/components/PortfolioPage.vue?vue&type=template&id=4706401c&":
+/*!**********************************************************************************!*\
+  !*** ./resources/js/components/PortfolioPage.vue?vue&type=template&id=4706401c& ***!
+  \**********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_PortfolioPage_vue_vue_type_template_id_4706401c___WEBPACK_IMPORTED_MODULE_0__.render),
+/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_PortfolioPage_vue_vue_type_template_id_4706401c___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
+/* harmony export */ });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_PortfolioPage_vue_vue_type_template_id_4706401c___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./PortfolioPage.vue?vue&type=template&id=4706401c& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/PortfolioPage.vue?vue&type=template&id=4706401c&");
 
 
 /***/ }),
@@ -12166,20 +12386,108 @@ var render = function () {
     _vm._v(" "),
     _vm.currentPage == "head"
       ? _c("div", [
-          _vm._m(3),
+          _c("div", { staticClass: "container" }, [
+            _c("div", { staticClass: "row" }, [
+              _vm._m(3),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-xs-12 col-lg-8" }, [
+                _c("div", { staticClass: "col show-text-box mt-3" }, [
+                  _vm._v(
+                    "\n            I’m a Web Developer based in Nur-Sultan, Kazakhstan. I don't worry\n            to get the hardest task, I like find solution also I enjoy learn\n            new technologies. I have a great experience in website development\n            sphere. You can see my resume\n            "
+                  ),
+                  _c(
+                    "a",
+                    {
+                      staticClass: "nav-link active",
+                      attrs: {
+                        href: "https://www.linkedin.com/in/ippolitov-konstantin/?locale=en_US",
+                      },
+                    },
+                    [_vm._v("here")]
+                  ),
+                  _vm._v("\n            and portfolio in\n            "),
+                  _c(
+                    "div",
+                    {
+                      staticClass: "nav-link active",
+                      attrs: { "aria-current": "page" },
+                      on: {
+                        click: function ($event) {
+                          return _vm.getPage("portfolio")
+                        },
+                      },
+                    },
+                    [_vm._v("\n              this link\n            ")]
+                  ),
+                  _vm._v("\n            .\n            "),
+                  _vm._m(4),
+                ]),
+                _vm._v(" "),
+                _vm._m(5),
+              ]),
+            ]),
+          ]),
           _vm._v(" "),
-          _c("div", { staticClass: "col" }),
-          _vm._v(" "),
-          _vm._m(4),
+          _vm._m(6),
         ])
       : _vm._e(),
     _vm._v(" "),
     _vm.currentPage == "portfolio"
-      ? _c("div", { staticClass: "container" }, [_vm._v("Page2")])
+      ? _c("div", { staticClass: "container" }, [_c("portfolio-page")], 1)
       : _vm._e(),
     _vm._v(" "),
     _vm.currentPage == "contacts"
-      ? _c("div", { staticClass: "container" }, [_vm._v("Page3")])
+      ? _c("div", { staticClass: "container text-center" }, [
+          _c("h2", { staticClass: "nav-link" }, [_vm._v("Have questions?")]),
+          _vm._v(" "),
+          _c("p", [_vm._v("Just contact me")]),
+          _vm._v(" "),
+          _vm._m(7),
+          _vm._v(" "),
+          _c("div", { staticClass: "t-sociallinks__item" }, [
+            _c(
+              "a",
+              {
+                attrs: {
+                  href: "https://t.me/Kostantin_Ippolitov",
+                  target: "_blank",
+                  rel: "noopener",
+                },
+              },
+              [
+                _c(
+                  "svg",
+                  {
+                    staticClass: "t-sociallinks__svg",
+                    attrs: {
+                      version: "1.1",
+                      id: "Layer_1",
+                      xmlns: "http://www.w3.org/2000/svg",
+                      "xmlns:xlink": "http://www.w3.org/1999/xlink",
+                      width: "30px",
+                      height: "30px",
+                      viewBox: "0 0 60 60",
+                      "xml:space": "preserve",
+                    },
+                  },
+                  [
+                    _c("desc", [_vm._v("Telegram")]),
+                    _vm._v(" "),
+                    _c("path", {
+                      attrs: {
+                        d: "M30 0C13.4 0 0 13.4 0 30s13.4 30 30 30 30-13.4 30-30S46.6 0 30 0zm16.9 13.9l-6.7 31.5c-.1.6-.8.9-1.4.6l-10.3-6.9-5.5 5.2c-.5.4-1.2.2-1.4-.4L18 32.7l-9.5-3.9c-.7-.3-.7-1.5 0-1.8l37.1-14.1c.7-.2 1.4.3 1.3 1z",
+                      },
+                    }),
+                    _vm._v(" "),
+                    _c("path", {
+                      attrs: { d: "M22.7 40.6l.6-5.8 16.8-16.3-20.2 13.3" },
+                    }),
+                  ]
+                ),
+              ]
+            ),
+          ]),
+        ])
       : _vm._e(),
   ])
 }
@@ -12226,10 +12534,11 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "col-xs-11 col-lg-3" }, [
       _c("div", { staticClass: "row text-center" }, [
-        _c("div", { staticClass: "col" }, [
+        _c("div", { staticClass: "col nav-item" }, [
           _c(
             "a",
             {
+              staticClass: "nav-link",
               attrs: {
                 href: "https://www.linkedin.com/in/ippolitov-konstantin/",
                 target: "_blank",
@@ -12239,21 +12548,22 @@ var staticRenderFns = [
             },
             [
               _c("img", {
-                staticClass: "icon-link",
+                staticClass: "header-icon-link",
                 attrs: { src: "/img/icon-linkedin.webp", alt: "" },
               }),
+              _vm._v(" "),
+              _c("p", { staticClass: "text-center text-xs mt-1" }, [
+                _vm._v("LinkedIn"),
+              ]),
             ]
           ),
-          _vm._v(" "),
-          _c("p", { staticClass: "text-center text-xs mt-1" }, [
-            _vm._v("LinkedIn"),
-          ]),
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "col" }, [
+        _c("div", { staticClass: "col nav-item" }, [
           _c(
             "a",
             {
+              staticClass: "nav-link",
               attrs: {
                 href: "https://github.com/IppolitovTech",
                 target: "_blank",
@@ -12263,15 +12573,15 @@ var staticRenderFns = [
             },
             [
               _c("img", {
-                staticClass: "icon-link",
+                staticClass: "header-icon-link",
                 attrs: { src: "/img/icon-github.webp", alt: "" },
               }),
+              _vm._v(" "),
+              _c("p", { staticClass: "text-center text-xs mt-1" }, [
+                _vm._v("GitHub"),
+              ]),
             ]
           ),
-          _vm._v(" "),
-          _c("p", { staticClass: "text-center text-xs mt-1" }, [
-            _vm._v("GitHub"),
-          ]),
         ]),
       ]),
     ])
@@ -12280,29 +12590,43 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container" }, [
-      _c("div", { staticClass: "row" }, [
-        _c("div", { staticClass: "col-xs-12 col-lg-4" }, [
-          _c("div", { staticClass: "my-photo mt-4" }),
-          _vm._v(" "),
-          _c("div"),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "col-xs-12 col-lg-8" }, [
-          _c("div", { staticClass: "col show-text-box mt-3" }, [
-            _vm._v(
-              "\n            \"Success is a great thing. And when you're riding a wave of\n            success, that's one thing,\" said seven-time world F1 champion\n            Hamilton, who has had a tough start to the 2022 season with the\n            Mercedes\n          "
-            ),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col" }, [
-            _c("h2", { staticClass: "title" }, [
-              _c("span", [_vm._v("Hello, nice")]),
-              _c("span", [_vm._v(" to see")]),
-              _c("span", [_vm._v(" you here")]),
-            ]),
-          ]),
-        ]),
+    return _c("div", { staticClass: "col-xs-12 col-lg-4" }, [
+      _c("div", { staticClass: "my-photo mt-2" }),
+      _vm._v(" "),
+      _c("div"),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col" }, [
+      _c(
+        "a",
+        {
+          attrs: {
+            href: "https://www.upwork.com/freelancers/~015872aecfd17cad0e",
+          },
+        },
+        [
+          _c(
+            "button",
+            { staticClass: "btn btn-success mt-2", attrs: { type: "button" } },
+            [_vm._v("\n                  Hire me at Upwork\n                ")]
+          ),
+        ]
+      ),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col" }, [
+      _c("h2", { staticClass: "title" }, [
+        _c("span", [_vm._v("Hello, nice")]),
+        _c("span", [_vm._v(" to see")]),
+        _c("span", [_vm._v(" you here")]),
       ]),
     ])
   },
@@ -12311,8 +12635,469 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "col main-page-background text-center" }, [
-      _c("div", { staticClass: "mt-5 main-page-background_text" }, [
+      _c("div", { staticClass: "mt-4 main-page-background_text" }, [
         _vm._v("My specializations:"),
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "row col-12 footer_text_color mt-4" }, [
+        _c("div", { staticClass: "col" }, [
+          _c("img", {
+            staticClass: "icon-link",
+            attrs: { src: "/img/icon-vue.png", alt: "" },
+          }),
+          _vm._v(" "),
+          _c("p", { staticClass: "text-xs mt-1" }, [_vm._v("Vue.js")]),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col" }, [
+          _c("img", {
+            staticClass: "icon-link",
+            attrs: { src: "/img/icon-php.png", alt: "" },
+          }),
+          _vm._v(" "),
+          _c("p", { staticClass: "text-xs mt-1" }, [_vm._v("PHP")]),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col" }, [
+          _c("img", {
+            staticClass: "icon-link",
+            attrs: { src: "/img/icon-html.png", alt: "" },
+          }),
+          _vm._v(" "),
+          _c("p", { staticClass: "text-xs mt-1" }, [_vm._v("HTML")]),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col" }, [
+          _c("img", {
+            staticClass: "icon-link",
+            attrs: { src: "/img/icon-css.png", alt: "" },
+          }),
+          _vm._v(" "),
+          _c("p", { staticClass: "text-xs mt-1" }, [_vm._v("CSS")]),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col" }, [
+          _c("img", {
+            staticClass: "icon-link",
+            attrs: { src: "/img/icon-js.png", alt: "" },
+          }),
+          _vm._v(" "),
+          _c("p", { staticClass: "text-xs mt-1" }, [_vm._v("JS")]),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col" }, [
+          _c("img", {
+            staticClass: "icon-link",
+            attrs: { src: "/img/icon-github.webp", alt: "" },
+          }),
+          _vm._v(" "),
+          _c("p", { staticClass: "text-xs mt-1" }, [_vm._v("GitHub")]),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col" }, [
+          _c("img", {
+            staticClass: "icon-link",
+            attrs: { src: "/img/icon-linux.png", alt: "" },
+          }),
+          _vm._v(" "),
+          _c("p", { staticClass: "text-xs mt-1" }, [
+            _vm._v("Linux and other OS"),
+          ]),
+        ]),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("p", [
+      _c("b", [_vm._v("Email:")]),
+      _vm._v(" ippolitov.konstantin@gmail.com"),
+    ])
+  },
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/PortfolioPage.vue?vue&type=template&id=4706401c&":
+/*!*************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/PortfolioPage.vue?vue&type=template&id=4706401c& ***!
+  \*************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render),
+/* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
+/* harmony export */ });
+var render = function () {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _vm._v(
+        "\n  This portfolio has been created since 2013 to 2017 years. The rest of the\n  time until today I worked with internal projects of different companies.\n  Most of the projects were in Russian language.\n  "
+      ),
+      _c("p", [_vm._v("My last work is:")]),
+      _vm._v(" "),
+      _c("p", [
+        _vm._v("\n    1) Technical support this site:\n    "),
+        _c("a", { attrs: { href: "https://kazatu.edu.kz/" } }, [
+          _vm._v("S.Seifullin Kazakh Agro Technical University"),
+        ]),
+      ]),
+      _vm._v(" "),
+      _c("p", [
+        _vm._v("\n    2) Technical support this site:\n    "),
+        _c(
+          "a",
+          { attrs: { href: "http://bulletinofscience.kazatu.edu.kz/" } },
+          [
+            _vm._v(
+              "Magazine «Bulletin of Science of the S.Seifullin Kazakh Agrotechnical\n      University»"
+            ),
+          ]
+        ),
+        _vm._v("\n    Used: Open Journal systems framework.\n  "),
+      ]),
+      _vm._v(" "),
+      _c("p", [_vm._v("It's work websites:")]),
+      _vm._v(" "),
+      _c("div", { staticClass: "clearfix entry-content" }, [
+        _c("div", { staticClass: "view view-fifth" }, [
+          _c("img", {
+            attrs: { src: "/img/old-portfolio/karandash.png", alt: "" },
+          }),
+          _vm._v(" "),
+          _c("div", { staticClass: "mask" }, [
+            _c("h3", [_vm._v("«Канцелярские товары в Астане»")]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v("\n          Веб сайт:\n          "),
+              _c("a", { attrs: { href: "//карандаш.kz/" } }, [
+                _vm._v("канцелярские товары в Астане"),
+              ]),
+              _vm._v(
+                "Наш\n          собственный проект! Сайт разработан на движке OpenCart, будем\n          продвигать сайт в поисковых системах по запросам канцелярские товары\n          в Астане и другим. На сайте Вы сможете купить любые канцелярские\n          товары с доставкой на дом.\n        "
+              ),
+            ]),
+          ]),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "view view-fifth" }, [
+          _c("img", { attrs: { src: "/img/old-portfolio/21.png", alt: "" } }),
+          _vm._v(" "),
+          _c("div", { staticClass: "mask" }, [
+            _c("h3", [_vm._v("ТОО «Selds AND COMPANY»")]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v("\n          Веб сайт: "),
+              _c("a", { attrs: { href: "//znebo.kz/" } }, [
+                _vm._v("http://znebo.kz"),
+              ]),
+              _vm._v(
+                "Натяжные потолки\n          в Астане. Продающий сайт разработан на самописном движке. Имеет\n          следующие возможности: добавление, удаление и редактирование:\n          новостей, порфолио, слайдера и других страниц. Внедрён калькулятор\n          расчёта стоимости материала с работой.\n        "
+              ),
+            ]),
+          ]),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "view view-fifth" }, [
+          _c("img", { attrs: { src: "/img/old-portfolio/6.png", alt: "" } }),
+          _vm._v(" "),
+          _c("div", { staticClass: "mask" }, [
+            _c("h3", [_vm._v("Люстры в Астане")]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v("\n          Веб сайт: "),
+              _c("a", { attrs: { href: "//com-fort.kz/" } }, [
+                _vm._v("http://com-fort.kz"),
+              ]),
+              _vm._v(
+                "Сайт создан\n          на самописном движке, выполнено продвижение по запросу «Люстры в\n          Астане».\n        "
+              ),
+            ]),
+          ]),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "view view-fifth" }, [
+          _c("img", { attrs: { src: "/img/old-portfolio/61.png", alt: "" } }),
+          _vm._v(" "),
+          _c("div", { staticClass: "mask" }, [
+            _c("h3", [_vm._v("ТОО «Smart Track Systems»")]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v("\n          Веб сайт: "),
+              _c("a", { attrs: { href: "//телескоп.kz/" } }, [
+                _vm._v("http://телескоп.kz"),
+              ]),
+              _vm._v(
+                "Интернет\n          магазин разработан на самописном движке и подключен к системе оплаты\n          карточками Visa.Функции админ панели: добавление, удаление и\n          редактирование новости, товара и дополнительной информации.Включена\n          возможность добавления пользователем любых фильтров товара для более\n          удобного поиска.\n        "
+              ),
+            ]),
+          ]),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "view view-fifth" }, [
+          _c("img", {
+            attrs: {
+              src: "/img/old-portfolio/portfolio_mplt9aidpled1g5d1plqmnjln3112.png",
+              alt: "",
+            },
+          }),
+          _vm._v(" "),
+          _c("div", { staticClass: "mask" }, [
+            _c("h3", [_vm._v("Магазин мебели в Астане — «Калинка.kz»")]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v("\n          Веб сайт:\n          "),
+              _c("a", { attrs: { href: "//kalinka.kz/" } }, [
+                _vm._v("магазин мебели в Астане"),
+              ]),
+              _vm._v(
+                "Оффициальный сайт\n          магазина мебели в Астане — «Калинка.kz». Разработан на самописном\n          движке\n        "
+              ),
+            ]),
+          ]),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "view view-fifth" }, [
+          _c("img", {
+            attrs: { src: "/img/old-portfolio/Screenshot_2.png", alt: "" },
+          }),
+          _vm._v(" "),
+          _c("div", { staticClass: "mask" }, [
+            _c("h3", [_vm._v("«Путём Преодоления»")]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v("\n          Веб сайт:\n          "),
+              _c(
+                "a",
+                { attrs: { href: "//xn----htbbbbsteogbfdozp2t.xn--p1ai/" } },
+                [_vm._v("http://Путём Преодоления.рф")]
+              ),
+              _vm._v(
+                "Сайт Наталья Грищенко автора книги «Путём Преодоления». Сайт\n          разработан на самописном движке.\n        "
+              ),
+            ]),
+          ]),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "view view-fifth" }, [
+          _c("img", { attrs: { src: "/img/old-portfolio/5.png", alt: "" } }),
+          _vm._v(" "),
+          _c("div", { staticClass: "mask" }, [
+            _c("h3", [_vm._v("«Центр исследований прикладной экономики»")]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v("\n          Веб сайт: "),
+              _c("a", { attrs: { href: "//cipe.kz/" } }, [
+                _vm._v("http://cipe.kz"),
+              ]),
+              _vm._v(
+                "Сайт разработан на\n          самописном движке. Заключен договор технической поддержки.\n        "
+              ),
+            ]),
+          ]),
+        ]),
+      ]),
+      _vm._v(" "),
+      _c("p", [_vm._v("It's closed websites:")]),
+      _vm._v(" "),
+      _c("div", { staticClass: "clearfix entry-content" }, [
+        _c("div", { staticClass: "view view-fifth" }, [
+          _c("img", { attrs: { src: "/img/old-portfolio/azam.png", alt: "" } }),
+          _vm._v(" "),
+          _c("div", { staticClass: "mask" }, [
+            _c("h3", [_vm._v("«Зерносушилки в Казахстане azam-kc.ru»")]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v("\n          Веб сайт: "),
+              _c("a", { attrs: { href: "//azam-kc.ru/" } }, [
+                _vm._v("зерносушилки в Казахстане"),
+              ]),
+              _vm._v(
+                "Вид\n          деятельности предприятия производство, строительство, ремонт\n          сеьскохозяйственого оборудования для первичной сушки и переработки\n          масличных и зернобобовых структур\n        "
+              ),
+            ]),
+          ]),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "view view-fifth" }, [
+          _c("img", { attrs: { src: "/img/old-portfolio/3.png", alt: "" } }),
+          _vm._v(" "),
+          _c("div", { staticClass: "mask" }, [
+            _c("h3", [
+              _vm._v("ТОО «Служба пультового мониторинга — Казахстан»"),
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v("\n          Веб сайт: "),
+              _c("a", { attrs: { href: "//spm-astana.kz/" } }, [
+                _vm._v("http://spm-astana.kz"),
+              ]),
+              _vm._v("Сайт\n          разработан на CMS WordPress.\n        "),
+            ]),
+          ]),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "view view-fifth" }, [
+          _c("img", { attrs: { src: "/img/old-portfolio/2.png", alt: "" } }),
+          _vm._v(" "),
+          _c("div", { staticClass: "mask" }, [
+            _c("h3", [_vm._v("Охранная фирма в Астане")]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v("\n          Веб сайт: "),
+              _c("a", { attrs: { href: "//cko.kz/" } }, [
+                _vm._v("http://cko.kz"),
+              ]),
+              _vm._v("Сайт разработан на\n          CMS WordPress.\n        "),
+            ]),
+          ]),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "view view-fifth" }, [
+          _c("img", { attrs: { src: "/img/old-portfolio/8.jpg", alt: "" } }),
+          _vm._v(" "),
+          _c("div", { staticClass: "mask" }, [
+            _c("h3", [_vm._v("Ломбард «Адамас»")]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v("\n          Веб сайт: "),
+              _c("a", { attrs: { href: "//lombardkz.kz/" } }, [
+                _vm._v("http://lombardkz.kz"),
+              ]),
+              _vm._v(
+                "Ломбард\n          «Адамас» разработан на движке «Joomla»\n        "
+              ),
+            ]),
+          ]),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "view view-fifth" }, [
+          _c("img", { attrs: { src: "/img/old-portfolio/7.png", alt: "" } }),
+          _vm._v(" "),
+          _c("div", { staticClass: "mask" }, [
+            _c("h3", [_vm._v("ГККП «Центр 12-летнего образования»")]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v("\n          Веб сайт: "),
+              _c("a", { attrs: { href: "//12let.kz/" } }, [
+                _vm._v("http://12let.kz"),
+              ]),
+              _vm._v(
+                "Cайт разработан\n          для ГККП «Центр поддержки системы 12-летнего образования и\n          английского языка» Государственного учреждения «Управление\n          образования города Астаны» на самописном движке. Имеются следующие\n          возможности: добавлять новости, объявления, фотографии, видео с\n          ютуба и задавать вопросы директору.\n        "
+              ),
+            ]),
+          ]),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "view view-fifth" }, [
+          _c("img", { attrs: { src: "/img/old-portfolio/5-1.png", alt: "" } }),
+          _vm._v(" "),
+          _c("div", { staticClass: "mask" }, [
+            _c("h3", [_vm._v("ОФ «Ассоциация экономистов Казахстана»")]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v("\n          Веб сайт:\n          "),
+              _c("a", { attrs: { href: "//economist.kz/" } }, [
+                _vm._v("http://economist.kz"),
+              ]),
+              _vm._v(
+                "Корпоративный сайт.\n          Разработан на движке Bitrix, со следующими возможностями: 1)\n          кросспостинг в социальные сети; 2) возможность комментирования\n          новостей популярными социальными сервисами. 3) Добавлены кнопочки\n          Like.\n        "
+              ),
+            ]),
+          ]),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "view view-fifth" }, [
+          _c("img", { attrs: { src: "/img/old-portfolio/4.jpg", alt: "" } }),
+          _vm._v(" "),
+          _c("div", { staticClass: "mask" }, [
+            _c("h3", [_vm._v("Авиатурагентство «BestWayKZ»")]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v("\n          Веб сайт: "),
+              _c("a", { attrs: { href: "//bway.ayn/" } }, [
+                _vm._v("http://bway.ayn"),
+              ]),
+              _vm._v(
+                "Авиатурагенство в\n          АстанеСайт разработан на самописном движке. Имеет следующие\n          возможности: добавление, удаление и редактирование: новостей,\n          порфолио, слайдера и других страниц.\n        "
+              ),
+            ]),
+          ]),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "view view-fifth" }, [
+          _c("img", { attrs: { src: "/img/old-portfolio/11.png", alt: "" } }),
+          _vm._v(" "),
+          _c("div", { staticClass: "mask" }, [
+            _c("h3", [_vm._v("АО «Инвестиционный фонд Казахстана»")]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v("\n          Веб сайт: "),
+              _c("a", { attrs: { href: "//ifk.kz/" } }, [
+                _vm._v("http://ifk.kz"),
+              ]),
+              _vm._v(
+                "Сайт Акционерного\n          Общества «Инвестиционный фонд Казахстана». Сайт поддерживается на\n          трех языках. Заключён договор технической поддержки.\n        "
+              ),
+            ]),
+          ]),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "view view-fifth" }, [
+          _c("img", {
+            attrs: { src: "/img/old-portfolio/etmai.png", alt: "" },
+          }),
+          _vm._v(" "),
+          _c("div", { staticClass: "mask" }, [
+            _c("h3", [_vm._v("«Сельскохозяйственный портал etmai.kz»")]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v("\n          Веб сайт:\n          "),
+              _c("a", { attrs: { href: "//etmai.kz/" } }, [
+                _vm._v("сельскохозяйственный портал Казахстана"),
+              ]),
+              _vm._v(
+                "Сайт\n          разработан на заказ. Создан на нашем самописном движке, продвижением\n          сайта занят сам заказчик.\n        "
+              ),
+            ]),
+          ]),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "view view-fifth" }, [
+          _c("img", { attrs: { src: "/img/old-portfolio/bnet.png", alt: "" } }),
+          _vm._v(" "),
+          _c("div", { staticClass: "mask" }, [
+            _c("h3", [
+              _vm._v("«Вся коммерческая недвижимость Казахстана bnet.kz»"),
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v("\n          Веб сайт:\n          "),
+              _c("a", { attrs: { href: "//bnet.kz/" } }, [
+                _vm._v("коммерческая недвижимость Казахстана"),
+              ]),
+              _vm._v(
+                "Наш\n          собственный проект! Сайт разработан на самописном движке, продвигаем\n          сайт в поисковых системах по запросам: «Бизнес центры Астаны»,\n          «Бизнес центры Алматы», «Бизнес центры».На нём Вы можете подобрать\n          подходящий для себя бизнес центр по многочисленным критериям.\n        "
+              ),
+            ]),
+          ]),
+        ]),
       ]),
     ])
   },

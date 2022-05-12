@@ -62,25 +62,35 @@
       </div>
       <div class="col-xs-11 col-lg-3">
         <div class="row text-center">
-          <div class="col">
+          <div class="col nav-item">
             <a
+              class="nav-link"
               href="https://www.linkedin.com/in/ippolitov-konstantin/"
               target="_blank"
               rel="noreferrer"
               aria-label="LinkedIn"
-              ><img src="/img/icon-linkedin.webp" alt="" class="icon-link"
-            /></a>
-            <p class="text-center text-xs mt-1">LinkedIn</p>
+              ><img
+                src="/img/icon-linkedin.webp"
+                alt=""
+                class="header-icon-link"
+              />
+              <p class="text-center text-xs mt-1">LinkedIn</p>
+            </a>
           </div>
-          <div class="col">
+          <div class="col nav-item">
             <a
+              class="nav-link"
               href="https://github.com/IppolitovTech"
               target="_blank"
               rel="noreferrer"
               aria-label="GitHub"
-              ><img src="/img/icon-github.webp" alt="" class="icon-link"
-            /></a>
-            <p class="text-center text-xs mt-1">GitHub</p>
+              ><img
+                src="/img/icon-github.webp"
+                alt=""
+                class="header-icon-link"
+              />
+              <p class="text-center text-xs mt-1">GitHub</p>
+            </a>
           </div>
         </div>
       </div>
@@ -90,15 +100,36 @@
       <div class="container">
         <div class="row">
           <div class="col-xs-12 col-lg-4">
-            <div class="my-photo mt-4"></div>
+            <div class="my-photo mt-2"></div>
             <div></div>
           </div>
           <div class="col-xs-12 col-lg-8">
             <div class="col show-text-box mt-3">
-              "Success is a great thing. And when you're riding a wave of
-              success, that's one thing," said seven-time world F1 champion
-              Hamilton, who has had a tough start to the 2022 season with the
-              Mercedes
+              I’m a Web Developer based in Nur-Sultan, Kazakhstan. I don't worry
+              to get the hardest task, I like find solution also I enjoy learn
+              new technologies. I have a great experience in website development
+              sphere. You can see my resume
+              <a
+                class="nav-link active"
+                href="https://www.linkedin.com/in/ippolitov-konstantin/?locale=en_US"
+                >here</a
+              >
+              and portfolio in
+              <div
+                class="nav-link active"
+                aria-current="page"
+                @click="getPage('portfolio')"
+              >
+                this link
+              </div>
+              .
+              <div class="col">
+                <a href="https://www.upwork.com/freelancers/~015872aecfd17cad0e"
+                  ><button type="button" class="btn btn-success mt-2">
+                    Hire me at Upwork
+                  </button></a
+                >
+              </div>
             </div>
             <div class="col">
               <h2 class="title">
@@ -110,16 +141,81 @@
         </div>
       </div>
 
-      <div class="col"></div>
-
       <div class="col main-page-background text-center">
-        <div class="mt-5 main-page-background_text">My specializations:</div>
+        <div class="mt-4 main-page-background_text">My specializations:</div>
+        <div class="row col-12 footer_text_color mt-4">
+          <div class="col">
+            <img src="/img/icon-vue.png" alt="" class="icon-link" />
+            <p class="text-xs mt-1">Vue.js</p>
+          </div>
+
+          <div class="col">
+            <img src="/img/icon-php.png" alt="" class="icon-link" />
+            <p class="text-xs mt-1">PHP</p>
+          </div>
+
+          <div class="col">
+            <img src="/img/icon-html.png" alt="" class="icon-link" />
+            <p class="text-xs mt-1">HTML</p>
+          </div>
+
+          <div class="col">
+            <img src="/img/icon-css.png" alt="" class="icon-link" />
+            <p class="text-xs mt-1">CSS</p>
+          </div>
+
+          <div class="col">
+            <img src="/img/icon-js.png" alt="" class="icon-link" />
+            <p class="text-xs mt-1">JS</p>
+          </div>
+
+          <div class="col">
+            <img src="/img/icon-github.webp" alt="" class="icon-link" />
+            <p class="text-xs mt-1">GitHub</p>
+          </div>
+
+          <div class="col">
+            <img src="/img/icon-linux.png" alt="" class="icon-link" />
+            <p class="text-xs mt-1">Linux and other OS</p>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="container" v-if="currentPage == 'portfolio'">Page2</div>
+    <div class="container" v-if="currentPage == 'portfolio'">
+      <portfolio-page />
+    </div>
 
-    <div class="container" v-if="currentPage == 'contacts'">Page3</div>
+    <div class="container text-center" v-if="currentPage == 'contacts'">
+      <h2 class="nav-link">Have questions?</h2>
+      <p>Just contact me</p>
+      <p><b>Email:</b> ippolitov.konstantin@gmail.com</p>
+      <div class="t-sociallinks__item">
+        <a
+          href="https://t.me/Kostantin_Ippolitov"
+          target="_blank"
+          rel="noopener"
+        >
+          <svg
+            class="t-sociallinks__svg"
+            version="1.1"
+            id="Layer_1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            width="30px"
+            height="30px"
+            viewBox="0 0 60 60"
+            xml:space="preserve"
+          >
+            <desc>Telegram</desc>
+            <path
+              d="M30 0C13.4 0 0 13.4 0 30s13.4 30 30 30 30-13.4 30-30S46.6 0 30 0zm16.9 13.9l-6.7 31.5c-.1.6-.8.9-1.4.6l-10.3-6.9-5.5 5.2c-.5.4-1.2.2-1.4-.4L18 32.7l-9.5-3.9c-.7-.3-.7-1.5 0-1.8l37.1-14.1c.7-.2 1.4.3 1.3 1z"
+            ></path>
+            <path d="M22.7 40.6l.6-5.8 16.8-16.3-20.2 13.3"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
   </div>
 </template>
 <script>
@@ -155,8 +251,7 @@ export default {
 $primary-color: #1e90ff;
 $secondary-color: #ffe221;
 $tertiary-color: #fd7e14;
-h2,
-h3 {
+h2 {
   font-size: 2.5em;
   text-transform: uppercase;
   span {
@@ -226,13 +321,41 @@ h3 {
 }
 </style>
 <style>
+h2 {
+  font-size: 2.25rem;
+  text-transform: none;
+}
+
+.upwork-button {
+  background: #14a800;
+  color: white;
+  height: 2rem;
+  width: 15rem;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.footer_text_color {
+  color: #fff;
+}
+
+.header-icon-link {
+  height: 3em;
+}
+
 .icon-link {
   height: 3em;
+  filter: brightness(132%) contrast(10%);
 }
 
 .show-text-box {
   overflow: hidden;
-  animation: showDiv 5s forwards;
+  animation: showDiv 3s forwards;
+}
+
+.color {
+  color: #feffff;
+  background: #fd7e14;
 }
 
 .show-text {
@@ -254,9 +377,6 @@ h3 {
   99% {
     height: 0px;
   }
-  100% {
-    height: 120px;
-  }
 }
 
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=devanagari,latin-ext");
@@ -265,17 +385,15 @@ h3 {
 }
 
 .main-page-background {
-  height: 300px;
-  weight: 100%;
   background: #000;
 }
 
 .main-page-background_text {
   color: white;
   text-shadow: 1px 2px black;
-  font-size: 2.5em;
+  font-size: 2.25rem;
   position: relative;
-  top: 38px;
+  top: 8px;
 }
 
 .my-name {
@@ -352,6 +470,7 @@ body {
 }
 
 .nav-link {
+  cursor: pointer;
   color: #212121 !important;
   font-weight: 500;
   transition: all 200ms linear;
