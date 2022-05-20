@@ -123,13 +123,13 @@
                 this link
               </div>
               .
-              <div class="col">
+              <!--<div class="col">
                 <a href="https://www.upwork.com/freelancers/~015872aecfd17cad0e"
                   ><button type="button" class="btn btn-success mt-2">
                     Hire me at Upwork
                   </button></a
                 >
-              </div>
+              </div>-->
             </div>
             <div class="col">
               <h2 class="title">
