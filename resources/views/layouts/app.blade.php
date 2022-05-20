@@ -8,18 +8,18 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Nunito', sans-serif;
-        }
-    </style>
 </head>
 
-<body id="app">
-    <div class="container">
-        @include('layouts.menu')
-        @yield('content')
+<body>
+    <div id="app">
+        <div>
+            <div>
+                <header-menu />
+            </div>
+            @yield('content')
+        </div>
     </div>
 </body>
+<script src="{{ asset('js/app.js') }}"></script>
 
 </html>
