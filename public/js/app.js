@@ -12420,15 +12420,14 @@ var render = function () {
                     [_vm._v("\n              this link\n            ")]
                   ),
                   _vm._v("\n            .\n            "),
-                  _vm._m(4),
                 ]),
                 _vm._v(" "),
-                _vm._m(5),
+                _vm._m(4),
               ]),
             ]),
           ]),
           _vm._v(" "),
-          _vm._m(6),
+          _vm._m(5),
         ])
       : _vm._e(),
     _vm._v(" "),
@@ -12442,7 +12441,7 @@ var render = function () {
           _vm._v(" "),
           _c("p", [_vm._v("Just contact me")]),
           _vm._v(" "),
-          _vm._m(7),
+          _vm._m(6),
           _vm._v(" "),
           _c("div", { staticClass: "t-sociallinks__item" }, [
             _c(
@@ -12594,28 +12593,6 @@ var staticRenderFns = [
       _c("div", { staticClass: "my-photo mt-2" }),
       _vm._v(" "),
       _c("div"),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col" }, [
-      _c(
-        "a",
-        {
-          attrs: {
-            href: "https://www.upwork.com/freelancers/~015872aecfd17cad0e",
-          },
-        },
-        [
-          _c(
-            "button",
-            { staticClass: "btn btn-success mt-2", attrs: { type: "button" } },
-            [_vm._v("\n                  Hire me at Upwork\n                ")]
-          ),
-        ]
-      ),
     ])
   },
   function () {
