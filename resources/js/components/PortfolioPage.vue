@@ -172,6 +172,7 @@
           </p>
         </div>
       </div>
+      </div>
       <div class="view view-fifth">
         <img src="/img/old-portfolio/4.jpg" alt="" />
         <div class="mask">
