@@ -19,6 +19,7 @@ Route::get('/', function () {
 
 Route::get('getAllLinks', 'MainMenuController@getAllLinks');
 
+Route::resource('portfolio', PortfolioController::class);
 Route::get('/welcome', function () {
     return view('welcome');
 });
