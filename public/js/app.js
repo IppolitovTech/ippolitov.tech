@@ -5505,15 +5505,18 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
       urlFromDataBase: [],
-      currentPage: "head"
+      currentPage: "head",
+      title: "Open journal system developer"
     };
   },
   created: function created() {
     this.getAllUrlFromDataBase();
+    document.title = this.title;
   },
   methods: {
     getAllUrlFromDataBase: function getAllUrlFromDataBase() {
@@ -5550,9 +5553,16 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
         }, _callee);
       }))();
     },
-    getPage: function getPage(url) {
-      console.log(url);
+    getPage: function getPage(url, urlFromDataBase) {
+      this.title = urlFromDataBase.title;
       this.currentPage = url;
+      document.title = this.title;
+
+      if (url != "head") {
+        history.pushState(null, null, "/" + url + "/");
+      } else {
+        history.pushState(null, null, "/");
+      }
     }
   }
 });
@@ -12301,7 +12311,17 @@ var render = function () {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _vm._m(0),
+    _c("div", { staticClass: "col text-center my-name mt-3" }, [
+      _c("h1", [
+        _c("div", {}, [
+          _c("div", { staticClass: "h1-text_color" }, [
+            _vm._v("\n          " + _vm._s(_vm.title) + "\n        "),
+          ]),
+          _vm._v(" "),
+          _c("div", {}, [_vm._v("Konstantin Ippolitov")]),
+        ]),
+      ]),
+    ]),
     _vm._v(" "),
     _c(
       "nav",
@@ -12312,7 +12332,7 @@ var render = function () {
       },
       [
         _c("div", { staticClass: "col-xs-1 col-lg-9" }, [
-          _vm._m(1),
+          _vm._m(0),
           _vm._v(" "),
           _c(
             "div",
@@ -12337,7 +12357,7 @@ var render = function () {
                           attrs: { "aria-current": "page" },
                           on: {
                             click: function ($event) {
-                              return _vm.getPage(url.link)
+                              return _vm.getPage(url.link, url)
                             },
                           },
                         },
@@ -12380,7 +12400,7 @@ var render = function () {
           ),
         ]),
         _vm._v(" "),
-        _vm._m(2),
+        _vm._m(1),
       ]
     ),
     _vm._v(" "),
@@ -12388,12 +12408,12 @@ var render = function () {
       ? _c("div", [
           _c("div", { staticClass: "container" }, [
             _c("div", { staticClass: "row" }, [
-              _vm._m(3),
+              _vm._m(2),
               _vm._v(" "),
               _c("div", { staticClass: "col-xs-12 col-lg-8" }, [
                 _c("div", { staticClass: "col show-text-box mt-3" }, [
                   _vm._v(
-                    "\n            I’m a Web Developer based in Nur-Sultan, Kazakhstan. I don't worry\n            to get the hardest task, I like find solution also I enjoy learn\n            new technologies. I have a great experience in website development\n            sphere. You can see my resume\n            "
+                    "\n            I’m a Web Developer based in Nur-Sultan, Kazakhstan. I don't worry\n            to get the hardest task, I like find solution also I enjoy learn\n            new technologies. I have a great experience in website development\n            sphere. You can see my resume is\n            "
                   ),
                   _c(
                     "a",
@@ -12491,22 +12511,6 @@ var render = function () {
   ])
 }
 var staticRenderFns = [
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col text-center my-name mt-3" }, [
-      _c("h1", [
-        _c("div", {}, [
-          _c("div", { staticClass: "h1-text_color" }, [
-            _vm._v("Web developer"),
-          ]),
-          _vm._v(" "),
-          _c("div", {}, [_vm._v("Konstantin Ippolitov")]),
-        ]),
-      ]),
-    ])
-  },
   function () {
     var _vm = this
     var _h = _vm.$createElement
@@ -12977,24 +12981,6 @@ var staticRenderFns = [
               ]),
               _vm._v(
                 "Cайт разработан\n          для ГККП «Центр поддержки системы 12-летнего образования и\n          английского языка» Государственного учреждения «Управление\n          образования города Астаны» на самописном движке. Имеются следующие\n          возможности: добавлять новости, объявления, фотографии, видео с\n          ютуба и задавать вопросы директору.\n        "
-              ),
-            ]),
-          ]),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "view view-fifth" }, [
-          _c("img", { attrs: { src: "/img/old-portfolio/5-1.png", alt: "" } }),
-          _vm._v(" "),
-          _c("div", { staticClass: "mask" }, [
-            _c("h3", [_vm._v("ОФ «Ассоциация экономистов Казахстана»")]),
-            _vm._v(" "),
-            _c("p", [
-              _vm._v("\n          Веб сайт:\n          "),
-              _c("a", { attrs: { href: "//economist.kz/" } }, [
-                _vm._v("http://economist.kz"),
-              ]),
-              _vm._v(
-                "Корпоративный сайт.\n          Разработан на движке Bitrix, со следующими возможностями: 1)\n          кросспостинг в социальные сети; 2) возможность комментирования\n          новостей популярными социальными сервисами. 3) Добавлены кнопочки\n          Like.\n        "
               ),
             ]),
           ]),
