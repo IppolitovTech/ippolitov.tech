@@ -12439,15 +12439,17 @@ var render = function () {
                     },
                     [_vm._v("\n              this link\n            ")]
                   ),
-                  _vm._v("\n            .\n            "),
+                  _vm._v(
+                    "\n            . I am not author Open journal system (OJS). I just have an experience work with him. Also i know Vue, PHP, HTML, CSS, JS, Ubuntu, Github and etc. Little work with Java and Sass.\n            "
+                  ),
                 ]),
                 _vm._v(" "),
-                _vm._m(4),
+                _vm._m(3),
               ]),
             ]),
           ]),
           _vm._v(" "),
-          _vm._m(5),
+          _vm._m(4),
         ])
       : _vm._e(),
     _vm._v(" "),
@@ -12461,7 +12463,7 @@ var render = function () {
           _vm._v(" "),
           _c("p", [_vm._v("Just contact me")]),
           _vm._v(" "),
-          _vm._m(6),
+          _vm._m(5),
           _vm._v(" "),
           _c("div", { staticClass: "t-sociallinks__item" }, [
             _c(
@@ -12985,80 +12987,78 @@ var staticRenderFns = [
             ]),
           ]),
         ]),
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "view view-fifth" }, [
+        _c("img", { attrs: { src: "/img/old-portfolio/4.jpg", alt: "" } }),
         _vm._v(" "),
-        _c("div", { staticClass: "view view-fifth" }, [
-          _c("img", { attrs: { src: "/img/old-portfolio/4.jpg", alt: "" } }),
+        _c("div", { staticClass: "mask" }, [
+          _c("h3", [_vm._v("Авиатурагентство «BestWayKZ»")]),
           _vm._v(" "),
-          _c("div", { staticClass: "mask" }, [
-            _c("h3", [_vm._v("Авиатурагентство «BestWayKZ»")]),
-            _vm._v(" "),
-            _c("p", [
-              _vm._v("\n          Веб сайт: "),
-              _c("a", { attrs: { href: "//bway.ayn/" } }, [
-                _vm._v("http://bway.ayn"),
-              ]),
-              _vm._v(
-                "Авиатурагенство в\n          АстанеСайт разработан на самописном движке. Имеет следующие\n          возможности: добавление, удаление и редактирование: новостей,\n          порфолио, слайдера и других страниц.\n        "
-              ),
+          _c("p", [
+            _vm._v("\n          Веб сайт: "),
+            _c("a", { attrs: { href: "//bway.ayn/" } }, [
+              _vm._v("http://bway.ayn"),
             ]),
+            _vm._v(
+              "Авиатурагенство в\n          АстанеСайт разработан на самописном движке. Имеет следующие\n          возможности: добавление, удаление и редактирование: новостей,\n          порфолио, слайдера и других страниц.\n        "
+            ),
           ]),
         ]),
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "view view-fifth" }, [
+        _c("img", { attrs: { src: "/img/old-portfolio/11.png", alt: "" } }),
         _vm._v(" "),
-        _c("div", { staticClass: "view view-fifth" }, [
-          _c("img", { attrs: { src: "/img/old-portfolio/11.png", alt: "" } }),
+        _c("div", { staticClass: "mask" }, [
+          _c("h3", [_vm._v("АО «Инвестиционный фонд Казахстана»")]),
           _vm._v(" "),
-          _c("div", { staticClass: "mask" }, [
-            _c("h3", [_vm._v("АО «Инвестиционный фонд Казахстана»")]),
-            _vm._v(" "),
-            _c("p", [
-              _vm._v("\n          Веб сайт: "),
-              _c("a", { attrs: { href: "//ifk.kz/" } }, [
-                _vm._v("http://ifk.kz"),
-              ]),
-              _vm._v(
-                "Сайт Акционерного\n          Общества «Инвестиционный фонд Казахстана». Сайт поддерживается на\n          трех языках. Заключён договор технической поддержки.\n        "
-              ),
+          _c("p", [
+            _vm._v("\n          Веб сайт: "),
+            _c("a", { attrs: { href: "//ifk.kz/" } }, [
+              _vm._v("http://ifk.kz"),
             ]),
+            _vm._v(
+              "Сайт Акционерного\n          Общества «Инвестиционный фонд Казахстана». Сайт поддерживается на\n          трех языках. Заключён договор технической поддержки.\n        "
+            ),
           ]),
         ]),
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "view view-fifth" }, [
+        _c("img", { attrs: { src: "/img/old-portfolio/etmai.png", alt: "" } }),
         _vm._v(" "),
-        _c("div", { staticClass: "view view-fifth" }, [
-          _c("img", {
-            attrs: { src: "/img/old-portfolio/etmai.png", alt: "" },
-          }),
+        _c("div", { staticClass: "mask" }, [
+          _c("h3", [_vm._v("«Сельскохозяйственный портал etmai.kz»")]),
           _vm._v(" "),
-          _c("div", { staticClass: "mask" }, [
-            _c("h3", [_vm._v("«Сельскохозяйственный портал etmai.kz»")]),
-            _vm._v(" "),
-            _c("p", [
-              _vm._v("\n          Веб сайт:\n          "),
-              _c("a", { attrs: { href: "//etmai.kz/" } }, [
-                _vm._v("сельскохозяйственный портал Казахстана"),
-              ]),
-              _vm._v(
-                "Сайт\n          разработан на заказ. Создан на нашем самописном движке, продвижением\n          сайта занят сам заказчик.\n        "
-              ),
+          _c("p", [
+            _vm._v("\n          Веб сайт:\n          "),
+            _c("a", { attrs: { href: "//etmai.kz/" } }, [
+              _vm._v("сельскохозяйственный портал Казахстана"),
             ]),
+            _vm._v(
+              "Сайт\n          разработан на заказ. Создан на нашем самописном движке, продвижением\n          сайта занят сам заказчик.\n        "
+            ),
           ]),
         ]),
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "view view-fifth" }, [
+        _c("img", { attrs: { src: "/img/old-portfolio/bnet.png", alt: "" } }),
         _vm._v(" "),
-        _c("div", { staticClass: "view view-fifth" }, [
-          _c("img", { attrs: { src: "/img/old-portfolio/bnet.png", alt: "" } }),
+        _c("div", { staticClass: "mask" }, [
+          _c("h3", [
+            _vm._v("«Вся коммерческая недвижимость Казахстана bnet.kz»"),
+          ]),
           _vm._v(" "),
-          _c("div", { staticClass: "mask" }, [
-            _c("h3", [
-              _vm._v("«Вся коммерческая недвижимость Казахстана bnet.kz»"),
+          _c("p", [
+            _vm._v("\n          Веб сайт:\n          "),
+            _c("a", { attrs: { href: "//bnet.kz/" } }, [
+              _vm._v("коммерческая недвижимость Казахстана"),
             ]),
-            _vm._v(" "),
-            _c("p", [
-              _vm._v("\n          Веб сайт:\n          "),
-              _c("a", { attrs: { href: "//bnet.kz/" } }, [
-                _vm._v("коммерческая недвижимость Казахстана"),
-              ]),
-              _vm._v(
-                "Наш\n          собственный проект! Сайт разработан на самописном движке, продвигаем\n          сайт в поисковых системах по запросам: «Бизнес центры Астаны»,\n          «Бизнес центры Алматы», «Бизнес центры».На нём Вы можете подобрать\n          подходящий для себя бизнес центр по многочисленным критериям.\n        "
-              ),
-            ]),
+            _vm._v(
+              "Наш\n          собственный проект! Сайт разработан на самописном движке, продвигаем\n          сайт в поисковых системах по запросам: «Бизнес центры Астаны»,\n          «Бизнес центры Алматы», «Бизнес центры».На нём Вы можете подобрать\n          подходящий для себя бизнес центр по многочисленным критериям.\n        "
+            ),
           ]),
         ]),
       ]),
