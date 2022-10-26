@@ -3,8 +3,9 @@
     <div class="col text-center my-name mt-3">
       <h1>
         <div class="">
-          <div class="h1-text_color">Web developer</div>
-
+          <div class="h1-text_color">
+            {{ title }}
+          </div>
           <div class="">Konstantin Ippolitov</div>
         </div>
       </h1>
@@ -38,7 +39,7 @@
                 v-bind:class="{ active: currentPage == url.link }"
                 class="nav-link"
                 aria-current="page"
-                @click="getPage(url.link)"
+                @click="getPage(url.link, url)"
               >
                 {{ url.name_page }}
               </div>
@@ -108,7 +109,7 @@
               I’m a Web Developer based in Nur-Sultan, Kazakhstan. I don't worry
               to get the hardest task, I like find solution also I enjoy learn
               new technologies. I have a great experience in website development
-              sphere. You can see my resume
+              sphere. You can see my resume is
               <a
                 class="nav-link active"
                 href="https://www.linkedin.com/in/ippolitov-konstantin/?locale=en_US"
@@ -122,7 +123,7 @@
               >
                 this link
               </div>
-              .
+              . I am not author Open journal system (OJS). I just have an experience work with him. Also i know Vue, PHP, HTML, CSS, JS, Ubuntu, Github and etc. Little work with Java and Sass.
               <!--<div class="col">
                 <a href="https://www.upwork.com/freelancers/~015872aecfd17cad0e"
                   ><button type="button" class="btn btn-success mt-2">
@@ -224,12 +225,13 @@ export default {
     return {
       urlFromDataBase: [],
       currentPage: "head",
+      title: "Open journal system developer",
     };
   },
   created() {
     this.getAllUrlFromDataBase();
+    document.title = this.title;
   },
-
   methods: {
     async getAllUrlFromDataBase() {
       let uri = "getAllLinks";
@@ -239,9 +241,15 @@ export default {
       }
       this.urlFromDataBase = response.data;
     },
-    getPage(url) {
-      console.log(url);
+    getPage(url, urlFromDataBase) {
+      this.title = urlFromDataBase.title;
       this.currentPage = url;
+      document.title = this.title;
+      if (url != "head") {
+        history.pushState(null, null, "/" + url + "/");
+      } else {
+        history.pushState(null, null, "/");
+      }
     },
   },
 };
