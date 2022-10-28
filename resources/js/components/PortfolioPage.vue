@@ -172,19 +172,6 @@
           </p>
         </div>
       </div>
-      <div class="view view-fifth">
-        <img src="/img/old-portfolio/5-1.png" alt="" />
-        <div class="mask">
-          <h3>ОФ «Ассоциация экономистов Казахстана»</h3>
-          <p>
-            Веб сайт:
-            <a href="//economist.kz/">http://economist.kz</a>Корпоративный сайт.
-            Разработан на движке Bitrix, со следующими возможностями: 1)
-            кросспостинг в социальные сети; 2) возможность комментирования
-            новостей популярными социальными сервисами. 3) Добавлены кнопочки
-            Like.
-          </p>
-        </div>
       </div>
       <div class="view view-fifth">
         <img src="/img/old-portfolio/4.jpg" alt="" />
