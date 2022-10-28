@@ -18,7 +18,7 @@ class MainMenuSeeder extends Seeder
         MainMenu::updateOrCreate(
             [
                 'name_page' => 'Head',
-                'link' => 'head'
+                'link' => '/'
             ],
         );
 

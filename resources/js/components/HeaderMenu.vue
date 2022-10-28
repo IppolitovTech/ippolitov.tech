@@ -97,7 +97,7 @@
       </div>
     </nav>
 
-    <div v-if="currentPage == 'head'">
+    <div v-if="currentPage == '/'">
       <div class="container">
         <div class="row">
           <div class="col-xs-12 col-lg-4">
@@ -123,7 +123,9 @@
               >
                 this link
               </div>
-              . I am not author Open journal system (OJS). I just have an experience work with him. Also i know Vue, PHP, HTML, CSS, JS, Ubuntu, Github and etc. Little work with Java and Sass.
+              . I am not author Open journal system (OJS). I just have an
+              experience work with him. Also i know Vue, PHP, HTML, CSS, JS,
+              Ubuntu, Github and etc. Little work with Java and Sass.
               <!--<div class="col">
                 <a href="https://www.upwork.com/freelancers/~015872aecfd17cad0e"
                   ><button type="button" class="btn btn-success mt-2">
@@ -219,41 +221,7 @@
     </div>
   </div>
 </template>
-<script>
-export default {
-  data: function () {
-    return {
-      urlFromDataBase: [],
-      currentPage: "head",
-      title: "Open journal system developer",
-    };
-  },
-  created() {
-    this.getAllUrlFromDataBase();
-    document.title = this.title;
-  },
-  methods: {
-    async getAllUrlFromDataBase() {
-      let uri = "getAllLinks";
-      const response = await axios.get(uri);
-      if (response.status !== 200) {
-        return [];
-      }
-      this.urlFromDataBase = response.data;
-    },
-    getPage(url, urlFromDataBase) {
-      this.title = urlFromDataBase.title;
-      this.currentPage = url;
-      document.title = this.title;
-      if (url != "head") {
-        history.pushState(null, null, "/" + url + "/");
-      } else {
-        history.pushState(null, null, "/");
-      }
-    },
-  },
-};
-</script>
+<script src="./HeaderMenu.js"></script>
 <style lang="scss">
 @import "https://fonts.googleapis.com/css?family=Baloo+Paaji";
 $primary-color: #1e90ff;
