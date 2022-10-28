@@ -13,13 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('pages/head');
-});
+Route::get('/', 'MainMenuController@mainPage');
+Route::get('portfolio', 'MainMenuController@mainPage');
+Route::get('contacts', 'MainMenuController@mainPage');
 
-Route::get('getAllLinks', 'MainMenuController@getAllLinks');
-
-Route::resource('portfolio', PortfolioController::class);
+Route::resource('admin/portfolio', PortfolioController::class);
 Route::get('/welcome', function () {
     return view('welcome');
 });

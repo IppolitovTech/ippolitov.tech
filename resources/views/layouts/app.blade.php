@@ -13,7 +13,7 @@
     <div id="app">
         <div>
             <div>
-                <header-menu />
+                <header-menu :currentlink='@json($currentLink)' :mainmenulinks='@json($mainMenuLinks)' />
             </div>
             @yield('content')
         </div>
