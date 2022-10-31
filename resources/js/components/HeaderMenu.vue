@@ -3,8 +3,9 @@
     <div class="col text-center my-name mt-3">
       <h1>
         <div class="">
-          <div class="h1-text_color">Web developer</div>
-
+          <div class="h1-text_color">
+            {{ title }}
+          </div>
           <div class="">Konstantin Ippolitov</div>
         </div>
       </h1>
@@ -38,7 +39,7 @@
                 v-bind:class="{ active: currentPage == url.link }"
                 class="nav-link"
                 aria-current="page"
-                @click="getPage(url.link)"
+                @click="getPage(url.link, url)"
               >
                 {{ url.name_page }}
               </div>
@@ -97,7 +98,7 @@
       </div>
     </nav>
 
-    <div v-if="currentPage == 'head'">
+    <div v-if="currentPage == '/'">
       <div class="container">
         <div class="row">
           <div class="col-xs-12 col-lg-4">
@@ -109,7 +110,7 @@
               I’m a Web Developer based in Nur-Sultan, Kazakhstan. I don't worry
               to get the hardest task, I like find solution also I enjoy learn
               new technologies. I have a great experience in website development
-              sphere. You can see my resume
+              sphere. You can see my resume is
               <a
                 class="nav-link active"
                 title="Ippolitov Konstantin linkedin's profile"
@@ -124,7 +125,9 @@
               >
                 this link
               </div>
-              .
+              . I am not author Open journal system (OJS). I just have an
+              experience work with him. Also i know Vue, PHP, HTML, CSS, JS,
+              Ubuntu, Github and etc. Little work with Java and Sass.
               <!--<div class="col">
                 <a href="https://www.upwork.com/freelancers/~015872aecfd17cad0e"
                   ><button type="button" class="btn btn-success mt-2">
@@ -220,34 +223,7 @@
     </div>
   </div>
 </template>
-<script>
-export default {
-  data: function () {
-    return {
-      urlFromDataBase: [],
-      currentPage: "head",
-    };
-  },
-  created() {
-    this.getAllUrlFromDataBase();
-  },
-
-  methods: {
-    async getAllUrlFromDataBase() {
-      let uri = "getAllLinks";
-      const response = await axios.get(uri);
-      if (response.status !== 200) {
-        return [];
-      }
-      this.urlFromDataBase = response.data;
-    },
-    getPage(url) {
-      console.log(url);
-      this.currentPage = url;
-    },
-  },
-};
-</script>
+<script src="./HeaderMenu.js"></script>
 <style lang="scss">
 @import "https://fonts.googleapis.com/css?family=Baloo+Paaji";
 $primary-color: #1e90ff;
