@@ -13,7 +13,6 @@
 
     <nav
       class="navbar navbar-expand-sm navbar-light bg-light text-right container"
-      role="navigation row"
     >
       <div class="col-xs-1 col-lg-9">
         <button
@@ -110,12 +109,12 @@
               I’m a Web Developer based in Nur-Sultan, Kazakhstan. I don't worry
               to get the hardest task, I like find solution also I enjoy learn
               new technologies. I have a great experience in website development
-              sphere. You can see my resume is
+              sphere. 
               <a
                 class="nav-link active"
                 title="Ippolitov Konstantin linkedin's profile"
                 href="https://www.linkedin.com/in/ippolitov-konstantin/?locale=en_US"
-                >here</a
+                >You can see my resume is here</a
               >
               and portfolio in
               <div
