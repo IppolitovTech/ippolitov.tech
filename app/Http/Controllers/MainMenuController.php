@@ -14,6 +14,11 @@ class MainMenuController extends Controller
         $mainMenuLinks = MainMenu::query()
             ->get()
             ->toArray();
-        return view('pages/head')->with(compact('currentLink', 'mainMenuLinks'));
+        foreach ($mainMenuLinks as $link) {
+            if ($currentLink == $link['link']) {
+                $title = $link['title'];
+            }
+        }
+        return view('pages/head')->with(compact('currentLink', 'mainMenuLinks', 'title'));
     }
 }
