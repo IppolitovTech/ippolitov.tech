@@ -69,6 +69,7 @@
               href="https://www.linkedin.com/in/ippolitov-konstantin/"
               target="_blank"
               rel="noreferrer"
+              title="Ippolitov Konstantin linkedin's profile"
               aria-label="LinkedIn"
               ><img
                 src="/img/icon-linkedin.webp"
@@ -112,6 +113,7 @@
               sphere. You can see my resume is
               <a
                 class="nav-link active"
+                title="Ippolitov Konstantin linkedin's profile"
                 href="https://www.linkedin.com/in/ippolitov-konstantin/?locale=en_US"
                 >here</a
               >
@@ -378,7 +380,7 @@ h2 {
 }
 
 .my-photo {
-  background: url("/img/my-photo.jpg") 44% 14%;
+  background: url("/img/my-photo.webp") 44% 14%;
   height: 435px;
   background-size: cover;
   border-radius: 50%;
