@@ -117,13 +117,13 @@
                 >You can see my resume is here</a
               >
               and portfolio in
+              <a href="/portfolio/">
               <div
                 class="nav-link active"
                 aria-current="page"
-                @click="getPage('portfolio')"
               >
                 this link
-              </div>
+              </div></a>
               . I am not author Open journal system (OJS). I just have an
               experience work with him. Also i know Vue, PHP, HTML, CSS, JS,
               Ubuntu, Github and etc. Little work with Java and Sass.
