@@ -21,3 +21,11 @@ Route::resource('admin/portfolio', PortfolioController::class);
 Route::get('/welcome', function () {
     return view('welcome');
 });
+
+Auth::routes();
+
+Route::get('/admin/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/welcome', function () {
+    return view('welcome');
+});
