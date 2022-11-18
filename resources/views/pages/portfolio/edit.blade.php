@@ -28,24 +28,16 @@
             @csrf
             @method('PUT')
             <div class="row">
+
+                @foreach(array_keys($portfolio->getAttributes()) as $item)
                 <div class="col-xs-12 col-sm-12 col-md-12">
                     <div class="form-group">
-                        <strong>Img:</strong>
-                        <input type="text" name="img" value="{{ $portfolio->img }}" class="form-control" placeholder="Img">
+                        <strong>{{$item}}:</strong>
+                        <input type="text" name="{{$item}}" value="{{ $portfolio->$item }}" class="form-control" placeholder="{{$item}}">
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-12 col-md-12">
-                    <div class="form-group">
-                        <strong>Header:</strong>
-                        <input type="text" name="header" value="{{ $portfolio->header }}" class="form-control" placeholder="Header">
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-12">
-                    <div class="form-group">
-                        <strong>Text:</strong>
-                        <input type="text" name="text" value="{{ $portfolio->text }}" class="form-control" placeholder="Text">
-                    </div>
-                </div>
+                @endforeach
+
                 <button type="submit" class="btn btn-primary ml-3">Submit</button>
             </div>
         </form>

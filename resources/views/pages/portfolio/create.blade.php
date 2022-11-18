@@ -27,24 +27,14 @@
         <form action="{{ route('portfolio.store') }}" method="POST" enctype="multipart/form-data">
             @csrf
             <div class="row">
+                @foreach($fields as $item)
                 <div class="col-xs-12 col-sm-12 col-md-12">
                     <div class="form-group">
-                        <strong>Img:</strong>
-                        <input type="text" name="img" class="form-control" placeholder="Img">
+                        <strong>{{$item}}:</strong>
+                        <input type="text" name="{{$item}}" class="form-control" placeholder="{{$item}}">
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-12 col-md-12">
-                    <div class="form-group">
-                        <strong>Header:</strong>
-                        <input type="text" name="header" class="form-control" placeholder="Header">
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-12">
-                    <div class="form-group">
-                        <strong>Text:</strong>
-                        <input type="text" name="text" class="form-control" placeholder="Text">
-                    </div>
-                </div>
+                @endforeach
                 <button type="submit" class="btn btn-primary ml-3">Submit</button>
             </div>
         </form>
