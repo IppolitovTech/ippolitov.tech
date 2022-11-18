@@ -1,5 +1,5 @@
 export default {
-    props: ["mainmenulinks", "currentlink"],
+    props: ["mainmenulinks", "currentlink",'portfoliowork', 'portfolioclose'],
     data: function () {
         return {
             urlFromDataBase: this.mainmenulinks,

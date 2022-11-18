@@ -26,18 +26,21 @@
         @endif
         <table class="table table-bordered">
             <tr>
-                <th>id</th>
-                <th>img</th>
-                <th>header</th>
-                <th>text</th>
+                @foreach($fields as $item)
+                <th>{{$item}}</th>
+                @endforeach
                 <th width="280px">Action</th>
             </tr>
             @foreach ($portfolio as $item)
             <tr>
-                <td>{{ $item->id }}</td>
+                @foreach($fields as $itemFields)
+
+                @if ($itemFields=='img')
                 <td><img src="{{ $item->img }}" style="width:350px; height:350px"></td>
-                <td>{{ $item->header }}</td>
-                <td>{{ $item->text }}</td>
+                @else
+                <td>{{ $item->$itemFields }}</td>
+                @endif
+                @endforeach
                 <td>
                     <form action="{{route('portfolio.destroy',$item->id)}}" method="Post">
                         <a class="btn btn-primary" href="{{route('portfolio.edit',$item->id)}}">Edit</a>

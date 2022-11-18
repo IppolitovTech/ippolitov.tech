@@ -7,6 +7,8 @@ use App\Models\Portfolio;
 
 class PortfolioController extends Controller
 {
+    private $fields = ['img', 'header', 'text', 'link', 'sort', 'work'];
+
     public function __construct()
     {
         $this->middleware('admin');
@@ -16,12 +18,14 @@ class PortfolioController extends Controller
     {
 
         $data['portfolio'] = Portfolio::orderBy('id', 'desc')->paginate(10);
-        return view('pages.portfolio.index', $data);
+        $fields = $this->fields;
+        return view('pages.portfolio.index', compact('fields'), $data);
     }
 
     public function create()
     {
-        return view('pages.portfolio.create');
+        $fields = $this->fields;
+        return view('pages.portfolio.create', compact('fields'));
     }
 
     public function edit(Portfolio $portfolio)
@@ -32,10 +36,7 @@ class PortfolioController extends Controller
     public function store(Request $request)
     {
         $portfolio = new Portfolio;
-        $portfolio->img = $request->img;
-        $portfolio->header = $request->header;
-        $portfolio->text = $request->text;
-        $portfolio->save();
+        $this->save($portfolio, $request);
         return redirect()->route('portfolio.index')
             ->with('success', 'Portfolio has been created successfully.');
     }
@@ -43,13 +44,19 @@ class PortfolioController extends Controller
     public function update(Request $request, $id)
     {
         $portfolio = Portfolio::find($id);
-        $portfolio->img = $request->img;
-        $portfolio->header = $request->header;
-        $portfolio->text = $request->text;
-        $portfolio->save();
+        $this->save($portfolio, $request);
         return redirect()->route('portfolio.index')
             ->with('success', 'Portfolio has been updated successfully.');
     }
+
+    public function save($portfolio, $request)
+    {
+        foreach ($this->fields as $field) {
+            $portfolio->$field = $request->$field;
+        }
+        $portfolio->save();
+    }
+
 
     public function destroy(Portfolio $portfolio)
     {

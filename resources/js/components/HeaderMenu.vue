@@ -185,7 +185,7 @@
     </div>
 
     <div class="container" v-if="currentPage == 'portfolio'">
-      <portfolio-page />
+      <portfolio-page :portfolioclose='portfolioclose' :portfoliowork='portfoliowork' />
     </div>
 
     <div class="container text-center" v-if="currentPage == 'contacts'">
