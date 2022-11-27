@@ -13,7 +13,7 @@ export default {
             if (currentValue.link == self.currentlink) {
                 self.currentPage = currentValue.link;
                 self.title = currentValue.title;
-                self.putSlashInBrowserAddressBar(currentValue.link);
+                //self.putSlashInBrowserAddressBar(currentValue.link);
                 document.title = currentValue.title;
             }
         });
