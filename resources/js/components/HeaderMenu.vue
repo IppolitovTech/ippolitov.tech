@@ -12,7 +12,7 @@
     </div>
 
     <nav
-      class="navbar navbar-expand-sm navbar-light bg-light text-right container"
+      class="navbar navbar-expand-sm navbar-light text-right container"
     >
       <div class="col-xs-1 col-lg-9">
         <button
