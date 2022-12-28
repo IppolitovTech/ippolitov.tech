@@ -1,25 +1,18 @@
 <template>
   <div>
-    This portfolio has been created since 2013 to 2017 years. The rest of the
-    time until today I worked with internal projects of different companies.
-    Most of the projects were in Russian language.
-    <p>My last work is:</p>
-
-    <p>
-      1) Technical support this site:
-      <a href="https://kazatu.edu.kz/"
-        >S.Seifullin Kazakh Agro Technical University</a
-      >
-    </p>
-
-    <p>
-      2) Technical support this site:
-      <a href="http://bulletinofscience.kazatu.edu.kz/"
-        >Magazine «Bulletin of Science of the S.Seifullin Kazakh Agrotechnical
-        University»</a
-      >
-      Used: Open Journal systems framework.
-    </p>
+    This portfolio has been created from 2013 to 2017 years. For the rest of my
+    time until today, I worked with internal projects of different companies.
+    Most of the projects were in the Russian language. My last work is technical
+    support three sites and one Ubuntu server. This sites are:
+    <a href="https://kazatu.edu.kz/">
+      S.Seifullin Kazakh Agro Technical University</a
+    >
+    Used: CakePHP framework and
+    <a href="http://bulletinofscience.kazatu.edu.kz/">
+      Magazine «Bulletin of Science of the S.Seifullin Kazakh Agrotechnical
+      University»</a
+    >
+    Used: Open Journal systems framework.
     <p>It's work websites:</p>
     <div class="clearfix entry-content">
       <template v-for="item in portfoliowork">
@@ -55,7 +48,7 @@
     </div>
   </div>
 </template>
-    <script>
+<script>
 export default {
   props: ["portfoliowork", "portfolioclose"],
   data: function () {
