@@ -27,7 +27,10 @@
         <table class="table table-bordered">
             <tr>
                 @foreach($fields as $item)
+                @if ($item=='text')
+                @else
                 <th>{{$item}}</th>
+                @endif
                 @endforeach
                 <th width="280px">Action</th>
             </tr>
@@ -37,6 +40,7 @@
 
                 @if ($itemFields=='img')
                 <td><img src="{{ $item->img }}" style="width:350px; height:350px"></td>
+                @elseif ($itemFields=='text')
                 @else
                 <td>{{ $item->$itemFields }}</td>
                 @endif
@@ -54,5 +58,13 @@
         </table>
         {!! $portfolio->links() !!}
 </body>
+<style>
+    span.relative.z-0.inline-flex.shadow-sm.rounded-md {
+        display: none;
+    }
+    td{
+        width:50px;
+    }
+</style>
 
 </html>

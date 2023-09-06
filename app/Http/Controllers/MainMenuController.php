@@ -20,10 +20,10 @@ class MainMenuController extends Controller
                 $title = $link['title'];
             }
         }
-        $portfolioWork = Portfolio::query()->where('work', 1)
+        $portfolioWork = Portfolio::query()->where('work', 1)->orderBy('sort')
             ->get()
             ->toArray();
-        $portfolioClose = Portfolio::query()->where('work', 0)
+        $portfolioClose = Portfolio::query()->where('work', 2)->orderBy('sort')
             ->get()
             ->toArray();
 
