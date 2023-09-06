@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Edit</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 
 <body>
@@ -33,7 +32,11 @@
                 <div class="col-xs-12 col-sm-12 col-md-12">
                     <div class="form-group">
                         <strong>{{$item}}:</strong>
-                        <input type="text" name="{{$item}}" value="{{ $portfolio->$item }}" class="form-control" placeholder="{{$item}}">
+                        @if ($item == 'text')
+                        <textarea id="summernote" name="{{ $item }}" class="form-control long-text" placeholder="{{ $item }}">{{ $portfolio->$item }}</textarea>
+                        @else
+                        <input type="text" name="{{ $item }}" value="{{ $portfolio->$item }}" class="form-control" placeholder="{{ $item }}">
+                        @endif
                     </div>
                 </div>
                 @endforeach
@@ -44,3 +47,4 @@
 </body>
 
 </html>
+@extends('pages.portfolio.styleAndSummernoteForPortfolio')

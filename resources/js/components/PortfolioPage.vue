@@ -1,49 +1,18 @@
 <template>
   <div>
-    This portfolio has been created from 2013 to 2017 years. For the rest of my
-    time until today, I worked with internal projects of different companies.
-    Most of the projects were in the Russian language. My last work is technical
-    support three sites and one Ubuntu server. This sites are:
-    <a href="https://kazatu.edu.kz/">
-      S.Seifullin Kazakh Agro Technical University</a
-    >
-    Used: CakePHP framework and
-    <a href="http://bulletinofscience.kazatu.edu.kz/">
-      Magazine «Bulletin of Science of the S.Seifullin Kazakh Agrotechnical
-      University»</a
-    >
-    Used: Open Journal systems framework.
-    <p>It's work websites:</p>
-    <div class="clearfix entry-content">
+    <div class="row">
       <template v-for="item in portfoliowork">
-        <a :href="item.link" class="pointer">
-          <div class="view view-fifth">
-            <!-- {{item.img}} -->
-            <!-- <img src="{`item.img`}" alt="" /> -->
-            <img :src="item.img" />
-            <div class="mask">
-              <h3>{{ item.header }}</h3>
-              <p>{{ item.text }}</p>
+        <div class="col-sx-1 col-md-4">
+          <a :href="item.link" class="pointer">
+            <div class="view view-fifth">
+              <img :src="item.img" />
+              <div class="mask">
+                <h3>{{ item.header }}</h3>
+                <p class="container" v-html="item.text"></p>
+              </div>
             </div>
-          </div>
-        </a>
-      </template>
-    </div>
-    <br />
-    <p>It's closed websites:</p>
-    <div class="clearfix entry-content">
-      <template v-for="item in portfolioclose">
-        <a :href="item.link" class="pointer">
-          <div class="view view-fifth">
-            <!-- {{item.img}} -->
-            <!-- <img src="{`item.img`}" alt="" /> -->
-            <img :src="item.img" />
-            <div class="mask">
-              <h3>{{ item.header }}</h3>
-              <p>{{ item.text }}</p>
-            </div>
-          </div>
-        </a>
+          </a>
+        </div>
       </template>
     </div>
   </div>
@@ -62,49 +31,23 @@ export default {
 </script>
 <style>
 .view {
-  width: 300px;
-  height: 270px;
-  margin: 10px;
   float: left;
   border: 6px solid #fff;
   overflow: hidden;
   position: relative;
-  text-align: center;
-  -webkit-box-shadow: 1px 1px 2px #e6e6e6;
-  -moz-box-shadow: 1px 1px 2px #e6e6e6;
-  box-shadow: 1px 1px 2px #e6e6e6;
-  cursor: default;
   background: black;
-  background: #fff url("/img/old-portfolio/bgimg.jpg") no-repeat center center;
+  background: #fff url("/img/old-portfolio/bgimg.jpg") repeat;
 }
 
 .view .mask,
 .view .content {
-  width: 300px;
-  height: 270px;
+  width: 100%;
   position: absolute;
   overflow: hidden;
   top: 0;
   left: 0;
-}
-
-.view-fifth .mask {
-  background-color: rgba(146, 96, 91, 0.3);
-  -webkit-transform: translateX(-300px);
-  -moz-transform: translateX(-300px);
-  -o-transform: translateX(-300px);
-  -ms-transform: translateX(-300px);
-  transform: translateX(-300px);
-  -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
-  filter: alpha(opacity=100);
-  opacity: 1;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  font-size: 0.9rem;
-  padding: 0px 12px 0px 4px;
+  font-size: 16px;
+  line-height: 1.6;
 }
 
 .view img {
@@ -113,12 +56,13 @@ export default {
 }
 
 .view-fifth img {
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
+
 img {
   width: auto\9;
   height: auto;
@@ -128,16 +72,17 @@ img {
   -ms-interpolation-mode: bicubic;
 }
 
-.view-fifth p {
+.view-fifth p,
+.view-fifth h3 {
   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
   opacity: 0;
   color: #333;
-  -webkit-transition: all 0.2s linear;
-  -moz-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
-  -ms-transition: all 0.2s linear;
-  transition: all 0.2s linear;
+  -webkit-transition: all 1.25s linear;
+  -moz-transition: all 1.25s linear;
+  -o-transition: all 1.25s linear;
+  -ms-transition: all 1.25s linear;
+  transition: all 1.25s linear;
 }
 
 .view-fifth:hover .mask {
@@ -149,14 +94,20 @@ img {
 }
 
 .view-fifth:hover img {
-  -webkit-transform: translateX(300px);
-  -moz-transform: translateX(300px);
-  -o-transform: translateX(300px);
-  -ms-transform: translateX(300px);
-  transform: translateX(300px);
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  -o-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  transform: translateX(100%);
 }
 
 .view-fifth:hover p {
+  -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  opacity: 1;
+}
+
+.view-fifth:hover h3 {
   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
   filter: alpha(opacity=100);
   opacity: 1;
@@ -171,6 +122,13 @@ img {
   font-size: 17px;
   padding: 10px;
   background: rgba(0, 0, 0, 0.8);
-  margin: 10px 0 0 0;
+  margin: 0px 0 0 0;
+  margin-bottom: 10px;
+}
+
+.col-sx-1.col-md-4 {
+  max-height: 350px;
+  overflow: hidden;
+  margin-bottom: 15px;
 }
 </style>

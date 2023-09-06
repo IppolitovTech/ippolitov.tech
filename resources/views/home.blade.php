@@ -20,7 +20,7 @@
 
             </div>
             <div class="card-body">
-                <a href="http://ippolitov.tech.local/admin/portfolio">Edit portfolio</a>
+                <a href="/admin/portfolio">Edit portfolio</a>
             </div>
         </div>
     </div>

@@ -17,7 +17,7 @@ class PortfolioController extends Controller
     public function index()
     {
 
-        $data['portfolio'] = Portfolio::orderBy('id', 'desc')->paginate(10);
+        $data['portfolio'] = Portfolio::orderBy('sort', 'asc')->paginate(10);
         $fields = $this->fields;
         return view('pages.portfolio.index', compact('fields'), $data);
     }
