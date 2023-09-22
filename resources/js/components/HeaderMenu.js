@@ -1,10 +1,11 @@
 export default {
-    props: ["mainmenulinks", "currentlink",'portfoliowork', 'portfolioclose'],
+    props: ["mainmenulinks", "currentlink", 'portfoliowork', 'portfolioclose', 'pagedata'],
     data: function () {
         return {
             urlFromDataBase: this.mainmenulinks,
             currentPage: "/",
-            title: "Open journal system developer",
+            title: "",
+            pagedataValue: this.pagedata
         };
     },
     mounted() {
@@ -13,8 +14,14 @@ export default {
             if (currentValue.link == self.currentlink) {
                 self.currentPage = currentValue.link;
                 self.title = currentValue.title;
-                //self.putSlashInBrowserAddressBar(currentValue.link);
                 document.title = currentValue.title;
+
+                if (Object.keys(self.pagedataValue).length > 1) {
+                    document.title = self.pagedataValue.title;
+                    self.title = self.pagedataValue.title;
+                }
+                self.putSlashInBrowserAddressBar(currentValue.link);
+
             }
         });
     },
@@ -26,11 +33,15 @@ export default {
             this.putSlashInBrowserAddressBar(link);
         },
         putSlashInBrowserAddressBar(url) {
-            if (url != "/") {
-                history.pushState(null, null, "/" + url + "/");
+            let self = this;
+            if (self.currentPage == '/') { history.pushState(null, null, url); return; }
+            console.log(Object.keys(self.pagedataValue).length);
+            if (Object.keys(self.pagedataValue).length > 1) {
+                history.pushState(null, null, "/" + url + "/" + this.pagedataValue.link + "/");
             } else {
-                history.pushState(null, null, "/");
+                history.pushState(null, null, "/" + url + "/");
             }
+            self.pagedataValue = [];
         },
     },
 };

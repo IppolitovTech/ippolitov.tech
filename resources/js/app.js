@@ -21,7 +21,10 @@ window.Vue = require('vue').default;
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 Vue.component('header-menu', require('./components/HeaderMenu.vue').default);
-Vue.component('portfolio-page', require('./components/PortfolioPage.vue').default);
+Vue.component('home-page', require('./components/templates/HomePage.vue').default);
+Vue.component('portfolio-page', require('./components/templates/PortfolioPage.vue').default);
+Vue.component('contacts-page', require('./components/templates/ContactsPage.vue').default);
+Vue.component('one-page', require('./components/templates/OnePage.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
