@@ -32,7 +32,7 @@
         @isset($title)
         <div>
             <div>
-                <header-menu :currentlink='@json($currentLink)' :mainmenulinks='@json($mainMenuLinks)' :portfolioclose='@json($portfolioClose)' :portfoliowork='@json($portfolioWork)' />
+                <header-menu :currentlink='@json($currentLink)' :mainmenulinks='@json($mainMenuLinks)' :portfolioclose='@json($portfolioClose)' :portfoliowork='@json($portfolioWork)' :pagedata='@json($pageData)'/>
             </div>
             @yield('content')
         </div>

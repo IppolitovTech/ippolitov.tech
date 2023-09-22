@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'MainMenuController@mainPage');
 Route::get('portfolio', 'MainMenuController@mainPage');
 Route::get('contacts', 'MainMenuController@mainPage');
+Route::get('/page/{id}', 'MainMenuController@onePage');
 
 Route::resource('admin/portfolio', PortfolioController::class);
 Route::get('/welcome', function () {
