@@ -19,9 +19,17 @@
                 </div>
 
             </div>
-            <div class="card-body">
-                <a href="/admin/portfolio">Edit portfolio</a>
-            </div>
+            <div class="row  mt-3">
+                <div class="col">
+                    <a class="btn btn-primary" href="/admin/portfolio"> Edit Portfolio</a>
+                </div>
+                <div class="col">
+                    <a class="btn btn-primary" href="/admin/page"> Edit Pages </a>
+                </div>
+                <div class="col">
+                    <a class="btn btn-primary" href="{{route('home')}}"> Home </a>
+                </div>
+            </div>           
         </div>
     </div>
 </div>

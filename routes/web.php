@@ -13,19 +13,21 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'MainMenuController@mainPage');
+Route::get('/', [App\Http\Controllers\MainMenuController::class, 'mainPage'])->name('home');
+
 Route::get('portfolio', 'MainMenuController@mainPage');
 Route::get('contacts', 'MainMenuController@mainPage');
 Route::get('/page/{id}', 'MainMenuController@onePage');
 
 Route::resource('admin/portfolio', PortfolioController::class);
+Route::resource('admin/page', PagesDatasController::class);
 Route::get('/welcome', function () {
     return view('welcome');
 });
 
 Auth::routes();
 
-Route::get('/admin/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('admin/', [App\Http\Controllers\HomeController::class, 'index'])->name('admin');
 
 Route::get('/welcome', function () {
     return view('welcome');

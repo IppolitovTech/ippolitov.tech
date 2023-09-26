@@ -96,7 +96,7 @@
     </nav>
 
     <div v-if="currentPage == '/'">
-      <home-page />
+      <home-page :pagedata="pagedata['pages']['home']" />
     </div>
 
     <div class="container" v-if="currentPage == 'portfolio'">
@@ -107,11 +107,11 @@
     </div>
 
     <div class="container text-center" v-if="currentPage == 'contacts'">
-      <contacts-page />
+      <contacts-page :pagedata="pagedata['pages']['contacts']" />
     </div>
 
     <div class="container text-center" v-if="currentPage == 'page'">
-      <one-page :pagedata="pagedata" />
+      <one-page :pagedata="pagedata['pages']['current']" />
     </div>
   </div>
 </template>
