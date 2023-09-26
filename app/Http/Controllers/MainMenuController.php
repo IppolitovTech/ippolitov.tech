@@ -47,6 +47,8 @@ class MainMenuController extends Controller
 
         $pageData = $this->getOnePageData($id);
         $pageData['pages']['current'] = $this->getOnePageData($id);
+        $pageData['pages']['home'] = $this->getOnePageData("home");
+        $pageData['pages']['contacts'] = $this->getOnePageData("contacts");
 
         $data = array_merge($data, ['pageData' => $pageData]);
 
