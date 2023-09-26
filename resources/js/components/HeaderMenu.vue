@@ -38,7 +38,9 @@
                 aria-current="page"
                 @click="getPage(url.link, url)"
               >
-                {{ url.name_page }}
+                <div v-if="url.link != 'page'">
+                  {{ url.name_page }}
+                </div>
               </div>
 
               <svg
