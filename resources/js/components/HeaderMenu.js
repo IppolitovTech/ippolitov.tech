@@ -17,8 +17,8 @@ export default {
                 document.title = currentValue.title;
 
                 if (Object.keys(self.pagedataValue).length > 1) {
-                    document.title = self.pagedataValue.title;
-                    self.title = self.pagedataValue.title;
+                    document.title = self.pagedataValue.header;
+                    self.title = self.pagedataValue.header;
                 }
                 self.putSlashInBrowserAddressBar(currentValue.link);
 
