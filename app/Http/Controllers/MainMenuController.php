@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\MainMenu;
 use App\Models\Portfolio;
-use App\Models\PagesData;
+use App\Models\Page;
 use Illuminate\Support\Facades\Route;
 
 class MainMenuController extends Controller
@@ -26,7 +26,10 @@ class MainMenuController extends Controller
         $portfolioWork = Portfolio::where('work', 1)->orderBy('sort')->get()->toArray();
         $portfolioClose = Portfolio::where('work', 2)->orderBy('sort')->get()->toArray();
 
-        $pageData = [];
+        $pageData['pages']['current'] = [];
+        $pageData['pages']['home'] = $this->getOnePageData("home");
+        $pageData['pages']['contacts'] = $this->getOnePageData("contacts");
+
 
         return compact('currentLink', 'mainMenuLinks', 'title', 'portfolioWork', 'portfolioClose', 'pageData');
     }
@@ -42,19 +45,8 @@ class MainMenuController extends Controller
         $data = $this->getCommonData();
         $data = array_merge($data, ['currentLink' => "page"]);
 
-        if (is_numeric($id)) {
-            try {
-                $pageData = PagesData::where('id', $id)->firstOrFail()->toArray();
-            } catch (\Illuminate\Database\Eloquent\ModelNotFoundException $e) {
-                abort(404);
-            }
-        } else {
-            try {
-                $pageData = PagesData::where('link', $id)->firstOrFail()->toArray();
-            } catch (\Illuminate\Database\Eloquent\ModelNotFoundException $e) {
-                abort(404);
-            }
-        }
+        $pageData = $this->getOnePageData($id);
+        $pageData['pages']['current'] = $this->getOnePageData($id);
 
         $data = array_merge($data, ['pageData' => $pageData]);
 
@@ -66,5 +58,25 @@ class MainMenuController extends Controller
         $data = $this->getCommonData();
 
         return view('pages/head')->with($data);
+    }
+
+
+    public function getOnePageData($id)
+    {
+        if (is_numeric($id)) {
+            try {
+                $pageData = Page::where('id', $id)->firstOrFail()->toArray();
+            } catch (\Illuminate\Database\Eloquent\ModelNotFoundException $e) {
+                abort(404);
+            }
+        } else {
+            try {
+                $pageData = Page::where('link', $id)->firstOrFail()->toArray();
+            } catch (\Illuminate\Database\Eloquent\ModelNotFoundException $e) {
+                abort(404);
+            }
+        }
+
+        return $pageData;
     }
 }
