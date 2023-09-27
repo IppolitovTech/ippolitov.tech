@@ -2,11 +2,35 @@
   <div>
     <div class="col text-center my-name mt-3">
       <h1>
-        <div class="">
+        <div>
           <div class="h1-text_color">
             {{ title }}
           </div>
-          <div class="">Konstantin Ippolitov</div>
+          <div>
+            Konstantin Ippolitov
+            <a
+              href="https://t.me/Kostantin_Ippolitov"
+              target="_blank"
+              rel="noopener"
+            >
+              <svg
+                class="t-sociallinks__svg"
+                version="1.1"
+                id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="30px"
+                height="30px"
+                viewBox="0 0 60 60"
+                xml:space="preserve"
+              >
+                <desc>Telegram</desc>
+                <path
+                  d="M30 0C13.4 0 0 13.4 0 30s13.4 30 30 30 30-13.4 30-30S46.6 0 30 0zm16.9 13.9l-6.7 31.5c-.1.6-.8.9-1.4.6l-10.3-6.9-5.5 5.2c-.5.4-1.2.2-1.4-.4L18 32.7l-9.5-3.9c-.7-.3-.7-1.5 0-1.8l37.1-14.1c.7-.2 1.4.3 1.3 1z"
+                ></path>
+                <path d="M22.7 40.6l.6-5.8 16.8-16.3-20.2 13.3"></path></svg
+            ></a>
+          </div>
         </div>
       </h1>
     </div>
@@ -274,10 +298,10 @@ h2 {
 }
 
 .my-photo {
-    background: url(/img/my-photo.webp) 0% 22% no-repeat;
-    height: 435px;
-    background-size: 100%;
-    border-radius: 50%;
+  background: url(/img/my-photo.webp) 0% 22% no-repeat;
+  height: 435px;
+  background-size: 100%;
+  border-radius: 50%;
 }
 
 /* #Primary

@@ -5215,9 +5215,35 @@ var render = function render() {
     _setup = _vm._self._setupProxy;
   return _c("div", [_c("div", {
     staticClass: "col text-center my-name mt-3"
-  }, [_c("h1", [_c("div", {}, [_c("div", {
+  }, [_c("h1", [_c("div", [_c("div", {
     staticClass: "h1-text_color"
-  }, [_vm._v("\n          " + _vm._s(_vm.title) + "\n        ")]), _vm._v(" "), _c("div", {}, [_vm._v("Konstantin Ippolitov")])])])]), _vm._v(" "), _c("nav", {
+  }, [_vm._v("\n          " + _vm._s(_vm.title) + "\n        ")]), _vm._v(" "), _c("div", [_vm._v("\n          Konstantin Ippolitov\n          "), _c("a", {
+    attrs: {
+      href: "https://t.me/Kostantin_Ippolitov",
+      target: "_blank",
+      rel: "noopener"
+    }
+  }, [_c("svg", {
+    staticClass: "t-sociallinks__svg",
+    attrs: {
+      version: "1.1",
+      id: "Layer_1",
+      xmlns: "http://www.w3.org/2000/svg",
+      "xmlns:xlink": "http://www.w3.org/1999/xlink",
+      width: "30px",
+      height: "30px",
+      viewBox: "0 0 60 60",
+      "xml:space": "preserve"
+    }
+  }, [_c("desc", [_vm._v("Telegram")]), _vm._v(" "), _c("path", {
+    attrs: {
+      d: "M30 0C13.4 0 0 13.4 0 30s13.4 30 30 30 30-13.4 30-30S46.6 0 30 0zm16.9 13.9l-6.7 31.5c-.1.6-.8.9-1.4.6l-10.3-6.9-5.5 5.2c-.5.4-1.2.2-1.4-.4L18 32.7l-9.5-3.9c-.7-.3-.7-1.5 0-1.8l37.1-14.1c.7-.2 1.4.3 1.3 1z"
+    }
+  }), _vm._v(" "), _c("path", {
+    attrs: {
+      d: "M22.7 40.6l.6-5.8 16.8-16.3-20.2 13.3"
+    }
+  })])])])])])]), _vm._v(" "), _c("nav", {
     staticClass: "navbar navbar-expand-sm navbar-light text-right container"
   }, [_c("div", {
     staticClass: "col-xs-1 col-lg-9"
@@ -10252,7 +10278,7 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 ___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=devanagari,latin-ext);"]);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\nh2 {\r\n  font-size: 2.25rem;\r\n  text-transform: none;\n}\n.upwork-button {\r\n  background: #14a800;\r\n  color: white;\r\n  height: 2rem;\r\n  width: 15rem;\r\n  border-radius: 50%;\r\n  text-align: center;\n}\n.footer_text_color {\r\n  color: #fff;\n}\n.header-icon-link {\r\n  height: 3em;\n}\n.icon-link {\r\n  height: 3em;\r\n  filter: brightness(132%) contrast(10%);\n}\n.show-text-box {\r\n  overflow: hidden;\r\n  animation: showDiv 3s forwards;\n}\n.color {\r\n  color: #feffff;\r\n  background: #fd7e14;\n}\n.show-text {\r\n  opacity: 0;\r\n  animation: ani 5s forwards;\n}\n@keyframes ani {\n0% {\r\n    opacity: 0;\n}\n100% {\r\n    opacity: 1;\n}\n}\n@keyframes showDiv {\n0%,\r\n  99% {\r\n    height: 0px;\n}\n}\n.h1-text_color {\r\n  color: #fd7e14;\n}\n.main-page-background {\r\n  background: #000;\n}\n.main-page-background_text {\r\n  color: white;\r\n  text-shadow: 1px 2px black;\r\n  font-size: 2.25rem;\r\n  position: relative;\r\n  top: 8px;\n}\n.my-name {\r\n  font-size: 3em;\r\n  text-shadow: 0px 2px #dddddd;\n}\n.my-photo {\r\n    background: url(/img/my-photo.webp) 0% 22% no-repeat;\r\n    height: 435px;\r\n    background-size: 100%;\r\n    border-radius: 50%;\n}\r\n\r\n/* #Primary\r\n================================================== */\nsvg.bi.bi-heart.active {\r\n  display: inline-block;\r\n  color: #fd7e14;\n}\nsvg.bi.bi-heart {\r\n  display: none;\n}\nbody {\r\n  font-family: \"Poppins\", sans-serif;\r\n  font-size: 1.3em;\r\n  font-weight: 400;\r\n  color: #212112;\r\n  background-color: #fff;\r\n  line-height: unset !important;\n}\n::-moz-selection {\r\n  color: #fff;\r\n  background-color: #fd7e14;\n}\n::selection {\r\n  color: #fff;\r\n  background-color: #fd7e14;\n}\n::-moz-selection {\r\n  color: #fff;\r\n  background-color: #fd7e14;\n}\r\n\r\n/* #Navigation\r\n================================================== */\n.navbar-toggler:active,\r\n.navbar-toggler:focus {\r\n  outline: none;\n}\n.navbar-light .navbar-toggler-icon {\r\n  width: 24px;\r\n  height: 17px;\r\n  background-image: none;\r\n  position: relative;\r\n  border-bottom: 1px solid #000;\r\n  transition: all 300ms linear;\n}\n.navbar-light .navbar-toggler-icon:after,\r\n.navbar-light .navbar-toggler-icon:before {\r\n  width: 24px;\r\n  position: absolute;\r\n  height: 1px;\r\n  background-color: #000;\r\n  top: 0;\r\n  left: 0;\r\n  content: \"\";\r\n  z-index: 2;\r\n  transition: all 300ms linear;\n}\n.nav-link {\r\n  cursor: pointer;\r\n  color: #212121 !important;\r\n  font-weight: 500;\r\n  transition: all 200ms linear;\n}\n.nav-item:hover .nav-link {\r\n  color: #fd7e14 !important;\n}\n.nav-link.active {\r\n  color: #fd7e14 !important;\n}\n.nav-link {\r\n  position: relative;\r\n  padding: 5px 0 !important;\r\n  display: inline-block;\n}\n.nav-item:after {\r\n  position: absolute;\r\n  bottom: -5px;\r\n  left: 0;\r\n  width: 100%;\r\n  height: 2px;\r\n  content: \"\";\r\n  background-color: #fd7e14;\r\n  opacity: 0;\r\n  transition: all 200ms linear;\n}\n.nav-item:hover:after {\r\n  bottom: 0;\r\n  opacity: 1;\n}\n.nav-item.active:hover:after {\r\n  opacity: 0;\n}\n.nav-item {\r\n  position: relative;\r\n  transition: all 200ms linear;\n}\n@media (max-width: 767px) {\n.nav-item:after {\r\n    display: none;\n}\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\nh2 {\r\n  font-size: 2.25rem;\r\n  text-transform: none;\n}\n.upwork-button {\r\n  background: #14a800;\r\n  color: white;\r\n  height: 2rem;\r\n  width: 15rem;\r\n  border-radius: 50%;\r\n  text-align: center;\n}\n.footer_text_color {\r\n  color: #fff;\n}\n.header-icon-link {\r\n  height: 3em;\n}\n.icon-link {\r\n  height: 3em;\r\n  filter: brightness(132%) contrast(10%);\n}\n.show-text-box {\r\n  overflow: hidden;\r\n  animation: showDiv 3s forwards;\n}\n.color {\r\n  color: #feffff;\r\n  background: #fd7e14;\n}\n.show-text {\r\n  opacity: 0;\r\n  animation: ani 5s forwards;\n}\n@keyframes ani {\n0% {\r\n    opacity: 0;\n}\n100% {\r\n    opacity: 1;\n}\n}\n@keyframes showDiv {\n0%,\r\n  99% {\r\n    height: 0px;\n}\n}\n.h1-text_color {\r\n  color: #fd7e14;\n}\n.main-page-background {\r\n  background: #000;\n}\n.main-page-background_text {\r\n  color: white;\r\n  text-shadow: 1px 2px black;\r\n  font-size: 2.25rem;\r\n  position: relative;\r\n  top: 8px;\n}\n.my-name {\r\n  font-size: 3em;\r\n  text-shadow: 0px 2px #dddddd;\n}\n.my-photo {\r\n  background: url(/img/my-photo.webp) 0% 22% no-repeat;\r\n  height: 435px;\r\n  background-size: 100%;\r\n  border-radius: 50%;\n}\r\n\r\n/* #Primary\r\n================================================== */\nsvg.bi.bi-heart.active {\r\n  display: inline-block;\r\n  color: #fd7e14;\n}\nsvg.bi.bi-heart {\r\n  display: none;\n}\nbody {\r\n  font-family: \"Poppins\", sans-serif;\r\n  font-size: 1.3em;\r\n  font-weight: 400;\r\n  color: #212112;\r\n  background-color: #fff;\r\n  line-height: unset !important;\n}\n::-moz-selection {\r\n  color: #fff;\r\n  background-color: #fd7e14;\n}\n::selection {\r\n  color: #fff;\r\n  background-color: #fd7e14;\n}\n::-moz-selection {\r\n  color: #fff;\r\n  background-color: #fd7e14;\n}\r\n\r\n/* #Navigation\r\n================================================== */\n.navbar-toggler:active,\r\n.navbar-toggler:focus {\r\n  outline: none;\n}\n.navbar-light .navbar-toggler-icon {\r\n  width: 24px;\r\n  height: 17px;\r\n  background-image: none;\r\n  position: relative;\r\n  border-bottom: 1px solid #000;\r\n  transition: all 300ms linear;\n}\n.navbar-light .navbar-toggler-icon:after,\r\n.navbar-light .navbar-toggler-icon:before {\r\n  width: 24px;\r\n  position: absolute;\r\n  height: 1px;\r\n  background-color: #000;\r\n  top: 0;\r\n  left: 0;\r\n  content: \"\";\r\n  z-index: 2;\r\n  transition: all 300ms linear;\n}\n.nav-link {\r\n  cursor: pointer;\r\n  color: #212121 !important;\r\n  font-weight: 500;\r\n  transition: all 200ms linear;\n}\n.nav-item:hover .nav-link {\r\n  color: #fd7e14 !important;\n}\n.nav-link.active {\r\n  color: #fd7e14 !important;\n}\n.nav-link {\r\n  position: relative;\r\n  padding: 5px 0 !important;\r\n  display: inline-block;\n}\n.nav-item:after {\r\n  position: absolute;\r\n  bottom: -5px;\r\n  left: 0;\r\n  width: 100%;\r\n  height: 2px;\r\n  content: \"\";\r\n  background-color: #fd7e14;\r\n  opacity: 0;\r\n  transition: all 200ms linear;\n}\n.nav-item:hover:after {\r\n  bottom: 0;\r\n  opacity: 1;\n}\n.nav-item.active:hover:after {\r\n  opacity: 0;\n}\n.nav-item {\r\n  position: relative;\r\n  transition: all 200ms linear;\n}\n@media (max-width: 767px) {\n.nav-item:after {\r\n    display: none;\n}\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
