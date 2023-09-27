@@ -5326,7 +5326,7 @@ var staticRenderFns = [function () {
   }, [_c("img", {
     staticClass: "header-icon-link",
     attrs: {
-      src: "/img/icon-linkedin.webp",
+      src: "/img/icons/icon-linkedin.webp",
       alt: ""
     }
   }), _vm._v(" "), _c("p", {
@@ -5344,7 +5344,7 @@ var staticRenderFns = [function () {
   }, [_c("img", {
     staticClass: "header-icon-link",
     attrs: {
-      src: "/img/icon-github.webp",
+      src: "/img/icons/icon-github.webp",
       alt: ""
     }
   }), _vm._v(" "), _c("p", {
@@ -5442,7 +5442,7 @@ var staticRenderFns = [function () {
   }, [_c("img", {
     staticClass: "icon-link",
     attrs: {
-      src: "/img/icon-vue.png",
+      src: "/img/icons/icon-vue.webp",
       alt: ""
     }
   }), _vm._v(" "), _c("p", {
@@ -5452,7 +5452,7 @@ var staticRenderFns = [function () {
   }, [_c("img", {
     staticClass: "icon-link",
     attrs: {
-      src: "/img/icon-php.png",
+      src: "/img/icons/icon-php.webp",
       alt: ""
     }
   }), _vm._v(" "), _c("p", {
@@ -5462,7 +5462,7 @@ var staticRenderFns = [function () {
   }, [_c("img", {
     staticClass: "icon-link",
     attrs: {
-      src: "/img/icon-html.png",
+      src: "/img/icons/icon-html.webp",
       alt: ""
     }
   }), _vm._v(" "), _c("p", {
@@ -5472,7 +5472,7 @@ var staticRenderFns = [function () {
   }, [_c("img", {
     staticClass: "icon-link",
     attrs: {
-      src: "/img/icon-css.png",
+      src: "/img/icons/icon-css.webp",
       alt: ""
     }
   }), _vm._v(" "), _c("p", {
@@ -5482,7 +5482,7 @@ var staticRenderFns = [function () {
   }, [_c("img", {
     staticClass: "icon-link",
     attrs: {
-      src: "/img/icon-js.png",
+      src: "/img/icons/icon-js.webp",
       alt: ""
     }
   }), _vm._v(" "), _c("p", {
@@ -5492,7 +5492,7 @@ var staticRenderFns = [function () {
   }, [_c("img", {
     staticClass: "icon-link",
     attrs: {
-      src: "/img/icon-github.webp",
+      src: "/img/icons/icon-github.webp",
       alt: ""
     }
   }), _vm._v(" "), _c("p", {
@@ -5502,7 +5502,7 @@ var staticRenderFns = [function () {
   }, [_c("img", {
     staticClass: "icon-link",
     attrs: {
-      src: "/img/icon-linux.png",
+      src: "/img/icons/icon-linux.webp",
       alt: ""
     }
   }), _vm._v(" "), _c("p", {
@@ -10252,7 +10252,7 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 ___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=devanagari,latin-ext);"]);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\nh2 {\r\n  font-size: 2.25rem;\r\n  text-transform: none;\n}\n.upwork-button {\r\n  background: #14a800;\r\n  color: white;\r\n  height: 2rem;\r\n  width: 15rem;\r\n  border-radius: 50%;\r\n  text-align: center;\n}\n.footer_text_color {\r\n  color: #fff;\n}\n.header-icon-link {\r\n  height: 3em;\n}\n.icon-link {\r\n  height: 3em;\r\n  filter: brightness(132%) contrast(10%);\n}\n.show-text-box {\r\n  overflow: hidden;\r\n  animation: showDiv 3s forwards;\n}\n.color {\r\n  color: #feffff;\r\n  background: #fd7e14;\n}\n.show-text {\r\n  opacity: 0;\r\n  animation: ani 5s forwards;\n}\n@keyframes ani {\n0% {\r\n    opacity: 0;\n}\n100% {\r\n    opacity: 1;\n}\n}\n@keyframes showDiv {\n0%,\r\n  99% {\r\n    height: 0px;\n}\n}\n.h1-text_color {\r\n  color: #fd7e14;\n}\n.main-page-background {\r\n  background: #000;\n}\n.main-page-background_text {\r\n  color: white;\r\n  text-shadow: 1px 2px black;\r\n  font-size: 2.25rem;\r\n  position: relative;\r\n  top: 8px;\n}\n.my-name {\r\n  font-size: 3em;\r\n  text-shadow: 0px 2px #dddddd;\n}\n.my-photo {\r\n  background: url(\"/img/my-photo.webp\") 44% 14%;\r\n  height: 435px;\r\n  background-size: cover;\r\n  border-radius: 50%;\n}\r\n\r\n/* #Primary\r\n================================================== */\nsvg.bi.bi-heart.active {\r\n  display: inline-block;\r\n  color: #fd7e14;\n}\nsvg.bi.bi-heart {\r\n  display: none;\n}\nbody {\r\n  font-family: \"Poppins\", sans-serif;\r\n  font-size: 1.3em;\r\n  font-weight: 400;\r\n  color: #212112;\r\n  background-color: #fff;\r\n  line-height: unset !important;\n}\n::-moz-selection {\r\n  color: #fff;\r\n  background-color: #fd7e14;\n}\n::selection {\r\n  color: #fff;\r\n  background-color: #fd7e14;\n}\n::-moz-selection {\r\n  color: #fff;\r\n  background-color: #fd7e14;\n}\r\n\r\n/* #Navigation\r\n================================================== */\n.navbar-toggler:active,\r\n.navbar-toggler:focus {\r\n  outline: none;\n}\n.navbar-light .navbar-toggler-icon {\r\n  width: 24px;\r\n  height: 17px;\r\n  background-image: none;\r\n  position: relative;\r\n  border-bottom: 1px solid #000;\r\n  transition: all 300ms linear;\n}\n.navbar-light .navbar-toggler-icon:after,\r\n.navbar-light .navbar-toggler-icon:before {\r\n  width: 24px;\r\n  position: absolute;\r\n  height: 1px;\r\n  background-color: #000;\r\n  top: 0;\r\n  left: 0;\r\n  content: \"\";\r\n  z-index: 2;\r\n  transition: all 300ms linear;\n}\n.nav-link {\r\n  cursor: pointer;\r\n  color: #212121 !important;\r\n  font-weight: 500;\r\n  transition: all 200ms linear;\n}\n.nav-item:hover .nav-link {\r\n  color: #fd7e14 !important;\n}\n.nav-link.active {\r\n  color: #fd7e14 !important;\n}\n.nav-link {\r\n  position: relative;\r\n  padding: 5px 0 !important;\r\n  display: inline-block;\n}\n.nav-item:after {\r\n  position: absolute;\r\n  bottom: -5px;\r\n  left: 0;\r\n  width: 100%;\r\n  height: 2px;\r\n  content: \"\";\r\n  background-color: #fd7e14;\r\n  opacity: 0;\r\n  transition: all 200ms linear;\n}\n.nav-item:hover:after {\r\n  bottom: 0;\r\n  opacity: 1;\n}\n.nav-item.active:hover:after {\r\n  opacity: 0;\n}\n.nav-item {\r\n  position: relative;\r\n  transition: all 200ms linear;\n}\n@media (max-width: 767px) {\n.nav-item:after {\r\n    display: none;\n}\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\nh2 {\r\n  font-size: 2.25rem;\r\n  text-transform: none;\n}\n.upwork-button {\r\n  background: #14a800;\r\n  color: white;\r\n  height: 2rem;\r\n  width: 15rem;\r\n  border-radius: 50%;\r\n  text-align: center;\n}\n.footer_text_color {\r\n  color: #fff;\n}\n.header-icon-link {\r\n  height: 3em;\n}\n.icon-link {\r\n  height: 3em;\r\n  filter: brightness(132%) contrast(10%);\n}\n.show-text-box {\r\n  overflow: hidden;\r\n  animation: showDiv 3s forwards;\n}\n.color {\r\n  color: #feffff;\r\n  background: #fd7e14;\n}\n.show-text {\r\n  opacity: 0;\r\n  animation: ani 5s forwards;\n}\n@keyframes ani {\n0% {\r\n    opacity: 0;\n}\n100% {\r\n    opacity: 1;\n}\n}\n@keyframes showDiv {\n0%,\r\n  99% {\r\n    height: 0px;\n}\n}\n.h1-text_color {\r\n  color: #fd7e14;\n}\n.main-page-background {\r\n  background: #000;\n}\n.main-page-background_text {\r\n  color: white;\r\n  text-shadow: 1px 2px black;\r\n  font-size: 2.25rem;\r\n  position: relative;\r\n  top: 8px;\n}\n.my-name {\r\n  font-size: 3em;\r\n  text-shadow: 0px 2px #dddddd;\n}\n.my-photo {\r\n    background: url(/img/my-photo.webp) 0% 22% no-repeat;\r\n    height: 435px;\r\n    background-size: 100%;\r\n    border-radius: 50%;\n}\r\n\r\n/* #Primary\r\n================================================== */\nsvg.bi.bi-heart.active {\r\n  display: inline-block;\r\n  color: #fd7e14;\n}\nsvg.bi.bi-heart {\r\n  display: none;\n}\nbody {\r\n  font-family: \"Poppins\", sans-serif;\r\n  font-size: 1.3em;\r\n  font-weight: 400;\r\n  color: #212112;\r\n  background-color: #fff;\r\n  line-height: unset !important;\n}\n::-moz-selection {\r\n  color: #fff;\r\n  background-color: #fd7e14;\n}\n::selection {\r\n  color: #fff;\r\n  background-color: #fd7e14;\n}\n::-moz-selection {\r\n  color: #fff;\r\n  background-color: #fd7e14;\n}\r\n\r\n/* #Navigation\r\n================================================== */\n.navbar-toggler:active,\r\n.navbar-toggler:focus {\r\n  outline: none;\n}\n.navbar-light .navbar-toggler-icon {\r\n  width: 24px;\r\n  height: 17px;\r\n  background-image: none;\r\n  position: relative;\r\n  border-bottom: 1px solid #000;\r\n  transition: all 300ms linear;\n}\n.navbar-light .navbar-toggler-icon:after,\r\n.navbar-light .navbar-toggler-icon:before {\r\n  width: 24px;\r\n  position: absolute;\r\n  height: 1px;\r\n  background-color: #000;\r\n  top: 0;\r\n  left: 0;\r\n  content: \"\";\r\n  z-index: 2;\r\n  transition: all 300ms linear;\n}\n.nav-link {\r\n  cursor: pointer;\r\n  color: #212121 !important;\r\n  font-weight: 500;\r\n  transition: all 200ms linear;\n}\n.nav-item:hover .nav-link {\r\n  color: #fd7e14 !important;\n}\n.nav-link.active {\r\n  color: #fd7e14 !important;\n}\n.nav-link {\r\n  position: relative;\r\n  padding: 5px 0 !important;\r\n  display: inline-block;\n}\n.nav-item:after {\r\n  position: absolute;\r\n  bottom: -5px;\r\n  left: 0;\r\n  width: 100%;\r\n  height: 2px;\r\n  content: \"\";\r\n  background-color: #fd7e14;\r\n  opacity: 0;\r\n  transition: all 200ms linear;\n}\n.nav-item:hover:after {\r\n  bottom: 0;\r\n  opacity: 1;\n}\n.nav-item.active:hover:after {\r\n  opacity: 0;\n}\n.nav-item {\r\n  position: relative;\r\n  transition: all 200ms linear;\n}\n@media (max-width: 767px) {\n.nav-item:after {\r\n    display: none;\n}\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -10276,7 +10276,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.view {\r\n  float: left;\r\n  border: 6px solid #fff;\r\n  overflow: hidden;\r\n  position: relative;\r\n  background: black;\r\n  background: #fff url(\"/img/old-portfolio/bgimg.jpg\") repeat;\n}\n.view .mask,\r\n.view .content {\r\n  width: 100%;\r\n  position: absolute;\r\n  overflow: hidden;\r\n  top: 0;\r\n  left: 0;\r\n  font-size: 16px;\r\n  line-height: 1.6;\n}\n.view img {\r\n  display: block;\r\n  position: relative;\n}\n.view-fifth img {\r\n  transition: all 1s ease-in-out;\n}\nimg {\r\n  width: auto\\9;\r\n  height: auto;\r\n  max-width: 100%;\r\n  vertical-align: middle;\r\n  border: 0;\r\n  -ms-interpolation-mode: bicubic;\n}\n.view-fifth p,\r\n.view-fifth h3 {\r\n  -ms-filter: \"progid: DXImageTransform.Microsoft.Alpha(Opacity=0)\";\r\n  filter: alpha(opacity=0);\r\n  opacity: 0;\r\n  color: #333;\r\n  transition: all 1.25s linear;\n}\n.view-fifth:hover .mask {\r\n  transform: translateX(0px);\n}\n.view-fifth:hover img {\r\n  transform: translateX(100%);\n}\n.view-fifth:hover p {\r\n  -ms-filter: \"progid: DXImageTransform.Microsoft.Alpha(Opacity=100)\";\r\n  filter: alpha(opacity=100);\r\n  opacity: 1;\n}\n.view-fifth:hover h3 {\r\n  -ms-filter: \"progid: DXImageTransform.Microsoft.Alpha(Opacity=100)\";\r\n  filter: alpha(opacity=100);\r\n  opacity: 1;\n}\n.view h3 {\r\n  font-family: Tahoma;\r\n  text-transform: uppercase;\r\n  color: #fff;\r\n  text-align: center;\r\n  position: relative;\r\n  font-size: 17px;\r\n  padding: 10px;\r\n  background: rgba(0, 0, 0, 0.8);\r\n  margin: 0px 0 0 0;\r\n  margin-bottom: 10px;\n}\n.col-sx-1.col-md-4 {\r\n  max-height: 350px;\r\n  overflow: hidden;\r\n  margin-bottom: 15px;\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.view {\r\n  float: left;\r\n  border: 6px solid #fff;\r\n  overflow: hidden;\r\n  position: relative;\r\n  background: black;\r\n  background: #fff url(\"/img/portfolio/background.webp\") repeat;\n}\n.view .mask,\r\n.view .content {\r\n  width: 100%;\r\n  position: absolute;\r\n  overflow: hidden;\r\n  top: 0;\r\n  left: 0;\r\n  font-size: 16px;\r\n  line-height: 1.6;\n}\n.view img {\r\n  display: block;\r\n  position: relative;\n}\n.view-fifth img {\r\n  transition: all 1s ease-in-out;\n}\nimg {\r\n  width: auto\\9;\r\n  height: auto;\r\n  max-width: 100%;\r\n  vertical-align: middle;\r\n  border: 0;\r\n  -ms-interpolation-mode: bicubic;\n}\n.view-fifth p,\r\n.view-fifth h3 {\r\n  -ms-filter: \"progid: DXImageTransform.Microsoft.Alpha(Opacity=0)\";\r\n  filter: alpha(opacity=0);\r\n  opacity: 0;\r\n  color: #333;\r\n  transition: all 1.25s linear;\n}\n.view-fifth:hover .mask {\r\n  transform: translateX(0px);\n}\n.view-fifth:hover img {\r\n  transform: translateX(100%);\n}\n.view-fifth:hover p {\r\n  -ms-filter: \"progid: DXImageTransform.Microsoft.Alpha(Opacity=100)\";\r\n  filter: alpha(opacity=100);\r\n  opacity: 1;\n}\n.view-fifth:hover h3 {\r\n  -ms-filter: \"progid: DXImageTransform.Microsoft.Alpha(Opacity=100)\";\r\n  filter: alpha(opacity=100);\r\n  opacity: 1;\n}\n.view h3 {\r\n  font-family: Tahoma;\r\n  text-transform: uppercase;\r\n  color: #fff;\r\n  text-align: center;\r\n  position: relative;\r\n  font-size: 17px;\r\n  padding: 10px;\r\n  background: rgba(0, 0, 0, 0.8);\r\n  margin: 0px 0 0 0;\r\n  margin-bottom: 10px;\n}\n.col-sx-1.col-md-4 {\r\n  max-height: 350px;\r\n  overflow: hidden;\r\n  margin-bottom: 15px;\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

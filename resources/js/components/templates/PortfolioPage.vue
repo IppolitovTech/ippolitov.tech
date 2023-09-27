@@ -36,7 +36,7 @@ export default {
   overflow: hidden;
   position: relative;
   background: black;
-  background: #fff url("/img/old-portfolio/bgimg.jpg") repeat;
+  background: #fff url("/img/portfolio/background.webp") repeat;
 }
 
 .view .mask,
