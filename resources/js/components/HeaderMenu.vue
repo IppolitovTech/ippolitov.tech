@@ -71,7 +71,7 @@
               title="Ippolitov Konstantin linkedin's profile"
               aria-label="LinkedIn"
               ><img
-                src="/img/icon-linkedin.webp"
+                src="/img/icons/icon-linkedin.webp"
                 alt=""
                 class="header-icon-link"
               />
@@ -86,7 +86,7 @@
               rel="noreferrer"
               aria-label="GitHub"
               ><img
-                src="/img/icon-github.webp"
+                src="/img/icons/icon-github.webp"
                 alt=""
                 class="header-icon-link"
               />
@@ -274,10 +274,10 @@ h2 {
 }
 
 .my-photo {
-  background: url("/img/my-photo.webp") 44% 14%;
-  height: 435px;
-  background-size: cover;
-  border-radius: 50%;
+    background: url(/img/my-photo.webp) 0% 22% no-repeat;
+    height: 435px;
+    background-size: 100%;
+    border-radius: 50%;
 }
 
 /* #Primary
