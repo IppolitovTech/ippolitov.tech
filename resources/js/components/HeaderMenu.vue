@@ -110,7 +110,7 @@
       <contacts-page />
     </div>
 
-    <div class="container text-center" v-if="currentPage == 'page'">
+    <div class="container" v-if="currentPage == 'page'">
       <one-page :pagedata="pagedata" />
     </div>
   </div>
