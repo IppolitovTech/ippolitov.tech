@@ -5,7 +5,7 @@ export default {
             urlFromDataBase: this.mainmenulinks,
             currentPage: "/",
             title: "",
-            pagedataValue: this.pagedata
+            pagedataValue: this.pagedata['pages']['current']
         };
     },
     mounted() {
@@ -17,8 +17,8 @@ export default {
                 document.title = currentValue.title;
 
                 if (Object.keys(self.pagedataValue).length > 1) {
-                    document.title = self.pagedataValue.title;
-                    self.title = self.pagedataValue.title;
+                    document.title = self.pagedataValue.header;
+                    self.title = self.pagedataValue.header;
                 }
                 self.putSlashInBrowserAddressBar(currentValue.link);
 
@@ -37,7 +37,7 @@ export default {
             if (self.currentPage == '/') { history.pushState(null, null, url); return; }
             console.log(Object.keys(self.pagedataValue).length);
             if (Object.keys(self.pagedataValue).length > 1) {
-                history.pushState(null, null, "/" + url + "/" + this.pagedataValue.link + "/");
+                history.pushState(null, null, "/" + url + "/" + self.pagedataValue.link + "/");
             } else {
                 history.pushState(null, null, "/" + url + "/");
             }
