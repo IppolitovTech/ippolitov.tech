@@ -135,8 +135,7 @@
     <div class="container text-center" v-if="currentPage == 'contacts'">
       <contacts-page :pagedata="pagedata['pages']['contacts']" />
     </div>
-
-    <div class="container text-center" v-if="currentPage == 'page'">
+    <div class="container" v-if="currentPage == 'page'">
       <one-page :pagedata="pagedata['pages']['current']" />
     </div>
   </div>
