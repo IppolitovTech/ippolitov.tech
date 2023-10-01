@@ -35,7 +35,6 @@ export default {
         putSlashInBrowserAddressBar(url) {
             let self = this;
             if (self.currentPage == '/') { history.pushState(null, null, url); return; }
-            console.log(Object.keys(self.pagedataValue).length);
             if (Object.keys(self.pagedataValue).length > 1) {
                 history.pushState(null, null, "/" + url + "/" + self.pagedataValue.link + "/");
             } else {

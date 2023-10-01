@@ -5306,7 +5306,7 @@ var render = function render() {
       pagedata: _vm.pagedata["pages"]["contacts"]
     }
   })], 1) : _vm._e(), _vm._v(" "), _vm.currentPage == "page" ? _c("div", {
-    staticClass: "container text-center"
+    staticClass: "container"
   }, [_c("one-page", {
     attrs: {
       pagedata: _vm.pagedata["pages"]["current"]
@@ -5747,7 +5747,6 @@ __webpack_require__.r(__webpack_exports__);
         history.pushState(null, null, url);
         return;
       }
-      console.log(Object.keys(self.pagedataValue).length);
       if (Object.keys(self.pagedataValue).length > 1) {
         history.pushState(null, null, "/" + url + "/" + self.pagedataValue.link + "/");
       } else {
