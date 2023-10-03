@@ -26,12 +26,16 @@ class MainMenuController extends Controller
         $portfolioWork = Portfolio::where('work', 1)->orderBy('sort')->get()->toArray();
         $portfolioClose = Portfolio::where('work', 2)->orderBy('sort')->get()->toArray();
 
-        $pageData['pages']['current'] = [];
-        $pageData['pages']['home'] = $this->getOnePageData("home");
-        $pageData['pages']['contacts'] = $this->getOnePageData("contacts");
-
+        $pageData = $this->getStaticPage();        
 
         return compact('currentLink', 'mainMenuLinks', 'title', 'portfolioWork', 'portfolioClose', 'pageData');
+    }
+
+    private function getStaticPage(){
+        $pageData['pages']['current'] = []; 
+        $pageData['pages']['home'] = $this->getOnePageData("/");
+        $pageData['pages']['contacts'] = $this->getOnePageData("contacts");
+        return $pageData;
     }
 
     public function onePage(Request $request, $id)
@@ -46,9 +50,8 @@ class MainMenuController extends Controller
         $data = array_merge($data, ['currentLink' => "page"]);
 
         $pageData = $this->getOnePageData($id);
+        $pageData = $this->getStaticPage();
         $pageData['pages']['current'] = $this->getOnePageData($id);
-        $pageData['pages']['home'] = $this->getOnePageData("home");
-        $pageData['pages']['contacts'] = $this->getOnePageData("contacts");
 
         $data = array_merge($data, ['pageData' => $pageData]);
 
