@@ -18,6 +18,7 @@ Route::get('/', [App\Http\Controllers\MainMenuController::class, 'mainPage'])->n
 Route::get('portfolio', 'MainMenuController@mainPage');
 Route::get('contacts', 'MainMenuController@mainPage');
 Route::get('/page/{id}', 'MainMenuController@onePage');
+Route::get('sitemap.xml', 'SitemapController@index');
 
 Route::resource('admin/portfolio', PortfolioController::class);
 Route::resource('admin/page', PagesDatasController::class);
