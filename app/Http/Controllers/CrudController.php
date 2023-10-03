@@ -11,7 +11,7 @@ class CrudController extends Controller
     {
         $this->middleware('admin');
     }
-    
+
     protected $fields = [];
     protected $modelClass = null;
 
@@ -50,6 +50,7 @@ class CrudController extends Controller
     public function update(Request $request, $id)
     {
         $model = $this->getModel()->find($id);
+        $model->updated_at = now();
         $this->save($model, $request);
         return redirect()->route($this->getModelTableName() . '.index')
             ->with('success', ucfirst($this->getModelTableName()) . ' has been updated successfully.');
