@@ -14,10 +14,11 @@ class CrudController extends Controller
 
     protected $fields = [];
     protected $modelClass = null;
+    protected $sortBy = [];
 
     public function index()
     {
-        $data['items'] = $this->getModel()->orderBy('sort', 'asc')->paginate(10);
+        $data['items'] = $this->getModel()->orderBy($this->sortBy[0], $this->sortBy[1])->paginate(10);
         $fields = $this->fields;
         $table = $this->getModelTableName();
         return view('pages.admin.crud.index', compact('fields', 'table', 'data'));
