@@ -19,17 +19,18 @@
         {{ session('success') }}
     </div>
     @endif
-    <table class="table table-bordered">
+    <table class="table table-bordered table table-striped">
         <tr>
             @foreach($fields as $field)
             @if ($field=='text')
+            @elseif ($field=='updated_at')
             @elseif ($field=='img')
             <th width="250px">{{ ucfirst($field) }}</th>
             @else
             <th>{{ ucfirst($field) }}</th>
             @endif
             @endforeach
-            <th width="180px">Actions</th>
+            <th width="280px">Actions</th>
         </tr>
         @foreach($data['items'] as $item)
         <tr>
@@ -39,16 +40,32 @@
                 <div style="background: url('{{ $item->img }}') top/cover no-repeat;" class="crud-image">
             </td>
             @elseif ($field=='text')
+            @elseif ($field=='updated_at')
             @else
             <td>{{ $item->$field }}</td>
             @endif
             @endforeach
             <td>
-                <form action="{{ route($table . '.destroy', $item->id) }}" method="POST">
-                    <a class="btn btn-primary" href="{{ route($table . '.edit', $item->id) }}">Edit</a>
-                    @csrf
-                    @method('DELETE')
-                    <button type="submit" class="btn btn-danger">Delete</button>
+
+                <form action="{{ route($table . '.destroy', $item->id) }}" method="POST" onsubmit="return confirmDelete();">
+                    <div class="row text-center">
+
+                        <div class="col-4">
+                            <a class="btn btn-primary" href="{{ route($table . '.edit', $item->id) }}">Edit</a>
+                        </div>
+
+                        <div class="col-4">
+                            @if ($item->blog=='1')
+                            <a class="btn btn-success" href="{{URL::to('/')}}/page/{{$item->id}}">View</a>
+                            @endif
+                        </div>
+
+                        @csrf
+                        @method('DELETE')
+                        <div class="col-4">
+                            <button type="submit" class="btn btn-danger">Delete</button>
+                        </div>
+                    </div>
                 </form>
             </td>
         </tr>
@@ -57,3 +74,12 @@
     <div class="pagination-container">{{ $data['items']->links() }}</div>
 </div>
 @extends('pages.admin.footer')
+<script>
+    function confirmDelete() {
+        if (confirm('Are you sure you want to delete this item?')) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+</script>
