@@ -47,7 +47,7 @@
             @endforeach
             <td>
 
-                <form action="{{ route($table . '.destroy', $item->id) }}" method="POST" onsubmit="return confirmDelete();">
+                <form action="{{ route($table . '.destroy', $item->id) }}" method="POST" onsubmit="return confirm('Are you sure you want to delete \n {{ $item->header }} ?')">
                     <div class="row text-center">
 
                         <div class="col-4">
@@ -74,12 +74,3 @@
     <div class="pagination-container">{{ $data['items']->links() }}</div>
 </div>
 @extends('pages.admin.footer')
-<script>
-    function confirmDelete() {
-        if (confirm('Are you sure you want to delete this item?')) {
-            return true;
-        } else {
-            return false;
-        }
-    }
-</script>
