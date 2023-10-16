@@ -10,7 +10,7 @@ use Google_Service_Indexing_UrlNotification;
 
 class GoogleSafeBrowsingController extends Controller
 {
-    public function submitForIndexing(Request $request)
+    public function scanLink(Request $request)
     {
         $apiKey = env('GOOGLE_SAFE_BROWSING_API_KEY');
         $clientId = env('GOOGLE_SAFE_BROWSING_CLIENT_ID');
@@ -36,10 +36,7 @@ class GoogleSafeBrowsingController extends Controller
         $data = json_decode($response->getBody());
 
         if ($this->isEmptyObject($data)) {
-
-            $indexingResponse = $this->submitToWebSearchIndexingAPI($url);
-
-            return response()->json(['error' => false, 'message' => 'The URL has been submitted for indexing.', 'indexingResponse' => $indexingResponse]);
+            return response()->json(['error' => false, 'message' => 'The URL is safe and contains no threats.']);
         } else {
             $errors = [];
             foreach ($data->matches as $match) {
@@ -50,6 +47,15 @@ class GoogleSafeBrowsingController extends Controller
         }
     }
 
+    public function submitForIndexing(Request $request)
+    {
+        $url = $request->input('url');
+
+        $indexingResponse = $this->submitToWebSearchIndexingAPI($url);
+
+        return response()->json(['error' => false, 'message' => 'The URL has been submitted for indexing.', 'indexingResponse' => $indexingResponse]);
+    }
+
     private function isEmptyObject($obj)
     {
         return json_encode($obj) === '{}';
@@ -57,8 +63,7 @@ class GoogleSafeBrowsingController extends Controller
 
     private function submitToWebSearchIndexingAPI($url)
     {
-        // JSON key path.
-        $keyFilePath = 'konstantindev-315e11644074.json';
+        $keyFilePath = env('GOOGLE_KEY_FILE_PATH');
 
         $googleClient = new Google\Client();
         $googleClient->setAuthConfig($keyFilePath);
@@ -71,11 +76,18 @@ class GoogleSafeBrowsingController extends Controller
         ]);
 
         try {
-            $result = $googleIndexingService->urlNotifications->publish($urlNotification);   
+            $result = $googleIndexingService->urlNotifications->publish($urlNotification);
 
-            return $result;
+            return [
+                'notifyTime' => $result->urlNotificationMetadata->latestUpdate["notifyTime"],
+                'type' => $result->urlNotificationMetadata->latestUpdate["type"],
+                'url' => $result->urlNotificationMetadata->latestUpdate["url"],
+            ];
         } catch (\Exception $e) {
-            return $e->getMessage();
+            return [
+                'error' => true,
+                'message' => $e->getMessage(),
+            ];
         }
     }
 }
