@@ -23,8 +23,8 @@ Route::get('sitemap.xml', 'SitemapController@index');
 // Google API
 Route::get('/admin/google/scan', 'GoogleSafeBrowsingController@scanIndex');
 Route::get('/admin/google/submit-for-indexing', 'GoogleSafeBrowsingController@submitIndex');
-Route::post('/scan-link', 'GoogleSafeBrowsingController@scanLink');
-Route::post('/submit-for-indexing', 'GoogleSafeBrowsingController@submitForIndexing');
+Route::post('/admin/google/scan', 'GoogleSafeBrowsingController@scanLink')->name('scanGoogle');;
+Route::post('/admin/google/submit-for-indexing', 'GoogleSafeBrowsingController@submitForIndexing')->name('submitGoogle');
 // Google API
 
 Route::resource('admin/portfolio', PortfolioController::class);
