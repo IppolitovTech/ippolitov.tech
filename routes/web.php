@@ -20,6 +20,17 @@ Route::get('contacts', 'MainMenuController@mainPage');
 Route::get('/page/{id}', 'MainMenuController@onePage');
 Route::get('sitemap.xml', 'SitemapController@index');
 
+// Google API
+Route::get('/scan', function () {
+    return view('pages.admin.google-api.scan');
+});
+Route::post('/scan-link', 'GoogleSafeBrowsingController@scanLink');
+Route::post('/submit-for-indexing', 'GoogleSafeBrowsingController@submitForIndexing');
+Route::get('/submit-for-indexing', function () {
+    return view('pages.admin.google-api.submit');
+});
+// Google API
+
 Route::resource('admin/portfolio', PortfolioController::class);
 Route::resource('admin/page', PagesDatasController::class);
 Route::get('/welcome', function () {
