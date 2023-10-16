@@ -5271,7 +5271,7 @@ var render = function render() {
           return _vm.getPage(url.link, url);
         }
       }
-    }, [url.link != "page" ? _c("div", [_vm._v("\n                " + _vm._s(url.name_page) + "\n              ")]) : _vm._e()]), _vm._v(" "), _c("svg", {
+    }, [_vm._v("\n                " + _vm._s(url.name_page) + "\n            ")]), _vm._v(" "), _c("svg", {
       staticClass: "bi bi-heart",
       "class": {
         active: _vm.currentPage == url.link

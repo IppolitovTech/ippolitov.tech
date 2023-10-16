@@ -26,13 +26,14 @@ class MainMenuController extends Controller
         $portfolioWork = Portfolio::where('work', 1)->orderBy('sort')->get()->toArray();
         $portfolioClose = Portfolio::where('work', 2)->orderBy('sort')->get()->toArray();
 
-        $pageData = $this->getStaticPage();        
+        $pageData = $this->getStaticPage();
 
         return compact('currentLink', 'mainMenuLinks', 'title', 'portfolioWork', 'portfolioClose', 'pageData');
     }
 
-    private function getStaticPage(){
-        $pageData['pages']['current'] = []; 
+    private function getStaticPage()
+    {
+        $pageData['pages']['current'] = [];
         $pageData['pages']['home'] = $this->getOnePageData("/");
         $pageData['pages']['contacts'] = $this->getOnePageData("contacts");
         return $pageData;
@@ -54,6 +55,9 @@ class MainMenuController extends Controller
         $pageData['pages']['current'] = $this->getOnePageData($id);
 
         $data = array_merge($data, ['pageData' => $pageData]);
+        $data = array_merge($data, ['blog' => $this->getDataBlog()]);
+
+        
 
         return view('pages/head')->with(array_merge($data, ['id' => $id]));
     }
@@ -61,6 +65,8 @@ class MainMenuController extends Controller
     public function mainPage()
     {
         $data = $this->getCommonData();
+
+        $data = array_merge($data, ['blog' =>  $this->getDataBlog()]);
 
         return view('pages/head')->with($data);
     }
@@ -83,5 +89,37 @@ class MainMenuController extends Controller
         }
 
         return $pageData;
+    }
+
+    // public function showBlog()
+    // {
+    //     $pageData = Page::orderBy('updated_at', 'asc')->paginate(5);
+    //     return view('pages.blog', compact('pageData'));
+    // }
+
+    public function getDataBlog()
+    {
+        //$pageData = Page::orderBy('updated_at', 'asc')->where('blog', 1)->paginate(5);
+        $pageData = Page::orderBy('updated_at', 'asc')->where('blog', 1)->get()->toArray();
+
+        // dd($pageData);
+        // foreach ($pageData as &$page) {
+        //     $text = strip_tags($page->text); // Удаляем HTML-теги
+        //     $text = mb_strimwidth($text, 0, 350, "...");
+        //     $page->text = $text;
+        // }
+        //  dd($pageData);
+        return $pageData;
+
+
+
+    }
+
+    
+    public function showBlog()
+    {
+        
+        $blog = Page::orderBy('updated_at', 'asc')->where('blog', 1)->paginate(5);
+        return view('pages.blog', compact('blog'));
     }
 }

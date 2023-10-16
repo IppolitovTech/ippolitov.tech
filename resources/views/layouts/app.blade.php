@@ -96,6 +96,7 @@
         <main class="py-4">
             @yield('content')
         </main>
+        @include('pages.blogHeaderPage', ['blog' => $blog])
     </div>
 </body>
 

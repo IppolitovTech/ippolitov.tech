@@ -62,9 +62,7 @@
                 aria-current="page"
                 @click="getPage(url.link, url)"
               >
-                <div v-if="url.link != 'page'">
                   {{ url.name_page }}
-                </div>
               </div>
 
               <svg
