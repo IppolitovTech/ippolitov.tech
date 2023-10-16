@@ -23,6 +23,7 @@ class CrudController extends Controller
         $table = $this->getModelTableName();
         return view('pages.admin.crud.index', compact('fields', 'table', 'data'));
     }
+
     public function create()
     {
         $fields = $this->fields;
@@ -43,7 +44,11 @@ class CrudController extends Controller
     public function store(Request $request)
     {
         $model = new $this->modelClass;
-        $this->save($model, $request);
+        $this->save($model, $request, true);
+        $model->link = $this->generateLink($request);
+        $model->work = 1; 
+        $model->blog = 1; 
+        $model->save();
         return redirect()->route($this->getModelTableName() . '.index')
             ->with('success', ucfirst($this->getModelTableName()) . ' has been created successfully.');
     }
@@ -65,12 +70,20 @@ class CrudController extends Controller
             ->with('success', ucfirst($this->getModelTableName()) . ' has been deleted successfully');
     }
 
-    protected function save($model, $request)
+    protected function save($model, $request, $isCreate = false)
     {
         foreach ($this->fields as $field) {
             $model->$field = $request->$field;
         }
         $model->save();
+    }
+
+    protected function generateLink($request)
+    {
+        $header = $request->header;
+        $link = $header;
+        $formattedLink = preg_replace('/[^a-z0-9]+/', '-', strtolower($link));
+        return $formattedLink;
     }
 
     protected function getModel()
