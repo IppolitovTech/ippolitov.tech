@@ -8,8 +8,18 @@ use Google;
 use Google_Service_Indexing;
 use Google_Service_Indexing_UrlNotification;
 
-class GoogleSafeBrowsingController extends Controller
+class GoogleSafeBrowsingController extends AdminAccessController
 {
+    public function scanIndex()
+    {
+        return view('pages.admin.google-api.scan');
+    }
+
+    public function submitIndex()
+    {
+        return view('pages.admin.google-api.submit');
+    }
+
     public function scanLink(Request $request)
     {
         $apiKey = env('GOOGLE_SAFE_BROWSING_API_KEY');
