@@ -19,7 +19,25 @@ class GoogleSafeBrowsingController extends Controller
     public function scanLink(Request $request)
     {
         $url = $request->input('url');
+        $errors = $this->getThreats($url);
 
+        return empty($errors)
+            ? "The link is safe."
+            : "The link contains the following threats: " . implode(', ', $errors);
+    }
+
+    public function submitForIndexing(Request $request)
+    {
+        $url = $request->input('url');
+        $errors = $this->getThreats($url);
+
+        return empty($errors)
+            ? "The URL has been submitted for indexing."
+            : "The link contains the following threats: " . implode(', ', $errors);
+    }
+
+    private function getThreats($url)
+    {
         $client = new Client();
 
         $response = $client->post("https://safebrowsing.googleapis.com/v4/threatMatches:find?key=$this->apiKey", [
@@ -41,38 +59,13 @@ class GoogleSafeBrowsingController extends Controller
 
         $data = json_decode($response->getBody());
 
-        return isset($data->matches) && count($data->matches) > 0
-            ? "The link contains a threat."
-            : "The link is safe.";
-    }
+        $errors = [];
+        if (isset($data->matches)) {
+            foreach ($data->matches as $match) {
+                $errors[] = $match->threatType;
+            }
+        }
 
-    public function submitForIndexing(Request $request)
-    {
-        $url = $request->input('url');
-
-        $client = new Client();
-
-        $response = $client->post("https://safebrowsing.googleapis.com/v4/threatMatches:find?key=$this->apiKey", [
-            'json' => [
-                'client' => [
-                    'clientId' => $this->clientId,
-                    'clientVersion' => '1.0',
-                ],
-                'threatInfo' => [
-                    'threatTypes' => [],
-                    'platformTypes' => [],
-                    'threatEntryTypes' => ['URL'],
-                    'threatEntries' => [
-                        ['url' => $url],
-                    ],
-                ],
-            ],
-        ]);
-
-        $data = json_decode($response->getBody());
-
-        return isset($data->matches) && count($data->matches) === 0
-            ? "The URL has been submitted for indexing."
-            : "The URL contains a threat and cannot be indexed.";
+        return $errors;
     }
 }
