@@ -5,7 +5,7 @@
 </head>
 <body>
     <h1>Link Scanning</h1>
-    <form action="/scan-link" method="post">
+    <form action="{{route('scanGoogle')}}" method="post">
         @csrf
         <label for="url">Enter the link for scanning:</label>
         <input type="text" name="url" id="url">

@@ -4,13 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class CrudController extends Controller
+class CrudController extends AdminAccessController
 {
-
-    public function __construct()
-    {
-        $this->middleware('admin');
-    }
 
     protected $fields = [];
     protected $modelClass = null;
