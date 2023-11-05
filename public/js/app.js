@@ -5217,7 +5217,7 @@ var render = function render() {
     staticClass: "col text-center my-name mt-3"
   }, [_c("h1", [_c("div", [_c("div", {
     staticClass: "h1-text_color"
-  }, [_vm._v("\n          " + _vm._s(_vm.title) + "\n        ")]), _vm._v(" "), _c("div", [_vm._v("\n          Konstantin Ippolitov\n          "), _c("a", {
+  }, [_vm._v("\n          " + _vm._s(_vm.title) + "\n        ")]), _vm._v(" "), _c("div", [_vm._v("\n          " + _vm._s(_vm.sitename) + "\n          "), _c("a", {
     attrs: {
       href: "https://t.me/Kostantin_Ippolitov",
       target: "_blank",
@@ -5710,7 +5710,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  props: ["mainmenulinks", "currentlink", 'portfoliowork', 'portfolioclose', 'pagedata'],
+  props: ["mainmenulinks", "currentlink", 'portfoliowork', 'portfolioclose', 'pagedata', 'sitename'],
   data: function data() {
     return {
       urlFromDataBase: this.mainmenulinks,

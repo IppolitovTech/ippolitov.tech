@@ -14,8 +14,6 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
-
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
 
@@ -33,7 +31,7 @@
         @isset($title)
         <div>
             <div>
-                <header-menu :currentlink='@json($currentLink)' :mainmenulinks='@json($mainMenuLinks)' :portfolioclose='@json($portfolioClose)' :portfoliowork='@json($portfolioWork)' :pagedata='@json($pageData)'/>
+                <header-menu :currentlink='@json($currentLink)' :mainmenulinks='@json($mainMenuLinks)' :portfolioclose='@json($portfolioClose)' :portfoliowork='@json($portfolioWork)' :pagedata='@json($pageData)' :sitename='@json(config("app.name", "Laravel"))' />
             </div>
             @yield('content')
         </div>
@@ -100,3 +98,31 @@
 </body>
 
 </html>
+@if($currentLink=='page')
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [{
+            "@type": "Article",
+            "isPartOf": {
+                "@id": "{{ url()->current() }}"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Konstantin",
+                "url": "{{ url()->current() }}"
+            },
+            "headline": "{{$pageData['pages']['current']['header']}} | konstantindev.com",
+            "datePublished": "{{$pageData['pages']['current']['created_at']}}",
+            "dateModified": "{{$pageData['pages']['current']['updated_at']}}",
+            "publisher": {
+                "@type": "Person",
+                "@id": "https://konstantindev.com/#person"
+            },
+            "inLanguage": "en-US",
+
+            "description": "{{strip_tags($pageData['pages']['current']['text'])}}"
+        }]
+    }
+</script>
+@endif
