@@ -7,7 +7,7 @@
             {{ title }}
           </div>
           <div>
-            Konstantin Ippolitov
+            {{ sitename }}
             <a
               href="https://t.me/Kostantin_Ippolitov"
               target="_blank"
