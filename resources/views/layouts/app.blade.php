@@ -98,6 +98,7 @@
 </body>
 
 </html>
+@if(isset($currentLink))
 @if($currentLink=='page')
 <script type="application/ld+json">
     {
@@ -125,4 +126,5 @@
         }]
     }
 </script>
+@endif
 @endif
