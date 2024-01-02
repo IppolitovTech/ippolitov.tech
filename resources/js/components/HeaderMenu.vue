@@ -317,7 +317,6 @@ svg.bi.bi-heart {
 
 body {
   font-family: "Poppins", sans-serif;
-  font-size: 1.3em;
   font-weight: 400;
   color: #212112;
   background-color: #fff;
